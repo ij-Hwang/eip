@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" type="text/css" href="CSS/lightbox.min.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/font.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/content.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <script src="JS/jquery-3.2.1.min.js"></script>
+    <script src="JS/lightbox-plus-jquery.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script>
+      lightbox.options.fadeDuration = 200;
+      lightbox.options.resizeDuration = 200;
+      lightbox.options.wrapAround = false;
+      lightbox.options.albumLabel = '%1 / %2';
+    </script>
+    <script>
+      var tjQuery = jQuery.noConflict(true);
+    </script>
+    <!-- <style type="text/css">
+      .tt_article_useless_p_margin p {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+    </style> -->
+
+    <style type="text/css">
+      #DragSchLayer {
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        width: 61px;
+        height: 31px;
+        margin: -30px 0px 0px -5px;
+        background: url(//search1.daumcdn.net/search/statics/common/pi/btn_drag_rect.png);
+        cursor: pointer;
+      }
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+        #DragSchLayer {
+          background-image: url(//search1.daumcdn.net/search/statics/common/pi/r2/btn_drag_rect.png);
+          background-size: 61px 31px;
+        }
+      }
+      span {
+        font-size: 15px;
+        color: #555;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>ExampleT</title>
+  </head>
+
+  <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" id="tt-body-page" class="layout-aside-right list-type-text paging-number" aria-hidden="false">
+    <script type="text/javascript" src="JS/base.js"></script>
+
+    <div id="wrap" style="height: auto !important">
+      <header id="header">
+        <div class="inner">
+          <h1>
+            <a class="subTitle">에듀_문제풀이</a>
+          </h1>
+          <nav id="gnb"></nav>
+          <nav id="eduMenu"></nav>
+        </div>
+      </header>
+      <section id="container" style="height: auto !important">
+        <div class="content-wrap" style="height: auto !important">
+          <article id="content" style="height: auto !important">
+            <!-- <div class="inner"> -->
+            <div class="entry-content">
+              <div class="tt_article_useless_p_margin contents_style">
+                <h3>11. 응용SW 기초 기술 활용</h3>
+                <p data-ke-size="size16">&nbsp;</p>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b
+                      >문제1. 운영체제의 비선점 프로세스 스케쥴링기법 중 하나인 HRN(Highest Response-ratio Next)은 어떤 작업이 서비스받을 시간과 그 작업이 서비스를 기다린 시간으로 결정되는 우선순위에 따라 CPU를 할당하는 기법이다. HRN 의 우선순위를
+                      결정하는 계산식을 쓰시오.</b
+                    >
+                  </p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : (대기시간 + 서비스시간)/서비스시간</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제2. 통신 프로토콜(Communication Protocol)은 컴퓨터나 원거리 통신 장비 사이에서 메시지를 주고받는 양식과 규칙의 체계이다. 통신 프로토콜을 구성하는 기본 요소 3가지를 쓰시오</b></p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 구문(Syntax), 의미(Semantic), 타이밍(Timing)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제3. OSI 참조 모델 중 두 장비 간의 전송을 위한 연결이나 전달 등의 인터페이스의 기계적, 전기적, 절차적 특성을 정의하며 비트를 물리적인 매체를 통해 전송하는 계층을 쓰시오.</b></p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 물리 계층(Physical Layer)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b
+                      >문제4. Linux 운영체제 위에서 구동하며 휴대 전화를 비롯한 휴대용 장치를 위한 운영체제와 미들웨어, 사용자 인터페이스 그리고 표준 응용 프로그램(웹 브라우저, 이메일 클라이언트. 단문 메시지 서비스(SMS), MMS 등을 포함하고 있는
+                      소프트웨어 스택이자 리눅스 모바일 운영체제이다. 개발자들이 자바와 코틀린 언어로 응용 프로그램을 작성할 수 있게 하였으며, 컴파일된 바이트코드를 구동할 수 있는 런타임 라이브러리를 제공하는 운영체제가 무엇인지 작성하시오.</b
+                    >
+                  </p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 안드로이드(Android)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b
+                      >문제5. 주기억장치의 현재 사용 중인 영역과 사용 가능한 영역의 크기가 다음 그림과 같다. 메모리 할당 시스템은 최악적합(worst-fit)방법으로 요청 영역을 배당한다. 만일 15K 기억공간을 요청 받은 경우 메모리 할당 시스템이 배당한 영역
+                      번호를 작성하시오.</b
+                    >
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>영역번호</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                    </tr>
+                    <tr>
+                      <td>사용가능크기</td>
+                      <td>40K</td>
+                      <td>사용중</td>
+                      <td>145K</td>
+                      <td>사용중</td>
+                      <td>300K</td>
+                      <td>사용중</td>
+                      <td>15K</td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">
+                      정답 : 5<br />
+                      <br />
+                      최적(best-fit) => 7번<br />
+                      최악(worst-fit)<br />
+                      최초(First-fit) : 들어갈 수 있는 최초 영역(영역이 많을 경우 빠름) =>1번
+                    </p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제6. CPU 스케줄링에서 HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 작업을 쓰시오.</b></p>
+                  <table class="noPaddingTable" style="padding: 0px; font-size: 14px">
+                    <tr>
+                      <td>작업</td>
+                      <td>대기시간</td>
+                      <td>서비스시간</td>
+                    </tr>
+                    <tr>
+                      <td>A</td>
+                      <td>15</td>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>B</td>
+                      <td>15</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>C</td>
+                      <td>10</td>
+                      <td>7</td>
+                    </tr>
+                    <tr>
+                      <td>D</td>
+                      <td>5</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>E</td>
+                      <td>8</td>
+                      <td>6</td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : B</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제7. CPU 스케줄링에서 RR 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 평균 대기 시간을 구하시오. (시간할당량 : 3)</b></p>
+                  <table class="noPaddingTable" style="padding: 0px; font-size: 14px">
+                    <tr>
+                      <td>프로세스</td>
+                      <td>실행시간</td>
+                      <td>도착시간</td>
+                    </tr>
+                    <tr>
+                      <td>A</td>
+                      <td>4</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>B</td>
+                      <td>3</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>C</td>
+                      <td>2</td>
+                      <td>1</td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 3.33</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제8. 다음 아래의 내용은 OSI 7계층 모델을 상위계충부터 순서대로 나열한 것이다. 빈칸에 알맞은 내용을 작성하시오.</b></p>
+                  <table style="text-align: left; padding: 0px; font-size: 14px">
+                    <tr>
+                      <td>Application Layer - Presentation Layer - Session Layer - Transport Layer - ( ????? ) - Datalink Layer - Physical Layer</td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">
+                      정답 : Network Layer (네트워크 계층)<br />
+                      <br />
+                      3계층<br />
+                      IP -> 도와주는 프로토콜 : (ICMP, ARP, RARP, IGMP)<br />
+                      보안성 Up : IPSEC(AH, ESP, IKE)<br />
+                    </p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제9. 다음 아래 보기의 OSI 7계층에 대한 설명 중 해당 계층을 순서대로 작성하시오.</b></p>
+                  <table style="text-align: left; padding: 0px; font-size: 14px">
+                    <tr>
+                      <td>
+                        <ul style="list-style: none">
+                          <li>가. 경로설정, 데이터 교환 및 중계, 트래픽 제어, 패킷정보 전송</li>
+                          <li>나. 정보형식(포맷), 코드 변환, 데이터 암호화, 데이터 압축, 구문 검색, 문맥 관리</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">가. 네트워크 계층(Network Layer)<br />나. 표현 계층(presentation Layer)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제10. 다음의 설명에 해당하는 네트워크 장비를 작성하시오.</b></p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        <ul>
+                          <li>OSI 계층 모델의 네트워크 계층에서 동작하는 장비이다.</li>
+                          <li>송신측과 수신측 간의 가장 빠르고 신뢰성 있는 경로를 설정ㆍ관리하며, 데이터를 전달하는 역할을 한다.</li>
+                          <li>주로 같은 프로토콜을 사용하는 네트워크간의 최적경로 설정을 위해 패킷이 지나가야 할 정 보를 테이블에 저장하여 지정된 경로를 통해 전송한다.</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 라우터(Router)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <h3>12. 제품소프트웨어 패키징</h3>
+                  <p>
+                    <b
+                      >문제1. 릴리즈 노트(Release Note)는 고객 편의성을 고려하여 조직의 최종 사용자인 고객과 잘 정리된 릴리즈 정보를 공유하는 문서이다. 릴리즈 노트의 내용으로는 보통 특정 소프트웨어 릴리즈의 최근 변경 사항, 개선 사항 및 버그 수정을
+                      간결히 요약되어 있다. 릴리즈 노트 작성 항목 중 문서 이름(릴리즈 노트 이름), 제품 이름, 버전 번호, 릴리즈 날짜, 참고 날짜, 노트 버전 등을 기술하는 작성항목이 무엇인지 쓰시오.</b
+                    >
+                  </p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 헤더(header)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제2. 다음 보기의 내용에서 빈칸에 알맞은 용어를 작성하시오</b></p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        <ul>
+                          <li>( &nbsp;&nbsp;&nbsp; )은(는) 각 모듈별로 생성한 실행 파일들을 묶어서 배포용 설치 파일을 만드는 것 이다.</li>
+                          <li>( &nbsp;&nbsp;&nbsp; )시에는 여러 가지 환경과 사용자의 요구사항을 반영할 수 있도록 변경 및 개선에 대한 관리를 고려해야 한다.</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 소프트웨어 패키징(Packaging)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b
+                      >문제3. 애플리케이션 모니터링 도구는 애플리케이션의 성능을 모니터링하여 장애를 미리 예방하기 위하여 필요하다. 애플리케이션 모니터링 도구의 종류 중에서 애플리케이션 서버로 유입되는 트랜잭션 수량, 처리시간, 응답시간 등을
+                      모니터링하는 하는 것을 작성하시오.</b
+                    >
+                  </p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 애플리케이션 성능관리</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b
+                      >문제4. DRM(Digital Rights Management)은 디지털 저작권 관리의 약자로, 디지털 콘텐츠 제공자의 권리와 이익을 안전하게 보호하며 불법복제를 막고 사용료 부과와 결제대행 등 콘텐츠의 생성에서 유통․관리까지를 일괄적으로 지원하는
+                      기술이다. DRM 시스템 구성 요소에 대한 설명에서 (가 ~ 다)에 들어갈 적합한 용어를 작성하시오.</b
+                    >
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>구분</td>
+                      <td>설명</td>
+                    </tr>
+                    <tr>
+                      <td>(가)</td>
+                      <td>콘텐츠를 메타데이터와 함께 배포 가능한 단위로 묶는 기능</td>
+                    </tr>
+                    <tr>
+                      <td>보안 컨테이너</td>
+                      <td>원본을 안전하게 유통하기 위한 전자적 보안장치</td>
+                    </tr>
+                    <tr>
+                      <td>(나)</td>
+                      <td>배포된 콘텐츠의 이용 권한을 통제</td>
+                    </tr>
+                    <tr>
+                      <td>(다)</td>
+                      <td>키관리 및 라이센스 발급 관리</td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">
+                      (가) : 패키저(Packager)<br />
+                      (나) : DRM 컨트롤러(Controller)<br />
+                      (다) : Clearing House(클리어링 하우스)
+                    </p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제5. DRM의 핵심적 기술 요소 중에서 크랙에 의한 콘텐츠 사용방지 기술을 말하는 것을 영어로 작 성하시오.</b></p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : Tamper Resistancek</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제6. 다음 아래의 보기는 DRM의 세부기술에 대한 설명이다. 괄호 (가) 와 (나)에 들어갈 적합한 용어를 작성하시오.</b></p>
+                  <table class="noPaddingTable" style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td><b>구분</b></td>
+                      <td><b>세부요소</b></td>
+                      <td><b>설명</b></td>
+                    </tr>
+                    <tr>
+                      <td rowspan="4">콘텐츠 패키징기술</td>
+                      <td>콘텐츠 패키징 구조</td>
+                      <td>패키징된 콘텐츠의 내부 구조를 표현하는 기술</td>
+                    </tr>
+                    <tr>
+                      <!-- <td rowspan="4"></td> -->
+                      <td>콘텐츠 파일 포맷설계</td>
+                      <td>패키징된 콘텐츠의 포멧에 대한 기술 규격 설계</td>
+                    </tr>
+                    <tr>
+                      <!-- <td rowspan="4"></td> -->
+                      <td>복합 콘텐츠 패키징</td>
+                      <td>여러 개의 콘텐츠를 묶어서 패키징하는 기술</td>
+                    </tr>
+                    <tr>
+                      <!-- <td rowspan="4"></td> -->
+                      <td>콘텐츠 암호화</td>
+                      <td>콘텐츠의 기밀성, 무결성 보장을 위한 기술</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="3">워터마킹/핑거프린팅 기술</td>
+                      <td>( 가 )</td>
+                      <td>다양한 공격에도 충분한 강인성을 유지하는 기술</td>
+                    </tr>
+                    <tr>
+                      <!-- <td rowspan="3"></td> -->
+                      <td>( 나 )</td>
+                      <td>불법 추적을 위한 ( 나 ) 정보 삽입 및 추출</td>
+                    </tr>
+                    <tr>
+                      <!-- <td rowspan="3"></td> -->
+                      <td>공격 및 평가</td>
+                      <td>기술의 강인성을 검증하기 위한 공격 및 평가기술</td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">(가) : 워터마킹 (나) : 핑거프린팅</p>
+                    <p class="moreless-content">
+                      워터마킹 : 판매자의 정보를 '비가시적'으로 숨겨 놓는 것<br />
+                      핑거프린팅 : 구매자 정보를 포함하여 불법 유포를 추적할 수 있는 것.<br />
+                      스테가노그래프 : 사진에 중요한 정보를 포함시킴 -> 리더기를 통해 읽을 수 있음
+                    </p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제7. 다음 아래 보기에서 설명하는 내용에 부합되는 용어를 작성하시오.</b></p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        <ul>
+                          <li>개발자 기준이 아닌 사용자 중심으로 작성한다.</li>
+                          <li>최초 설치 진행부터 완료까지 설치 방법을 순차적으로 상세히 설명한다.</li>
+                          <li>각 단계별 메시지 및 해당 화면을 순서대로 전부 캡쳐하여 사용자가 이해하기 쉽도록 구성한다.</li>
+                          <li>설치 도중에 발생하는 오류나 이상 현상도 요약 정리하여 설명한다.</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 설치 매뉴얼 (Installation Manual)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제8. 다음 아래 보기에서 설명하는 내용에 부합되는 용어를 작성하시오</b></p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        <us>
+                          <li>1992년 미국방성의 지원으로 설립된 카네기멜론 대학의 SEI가 제안했다.</li>
+                          <li>
+                            소프트웨어 조직이 높은 품질의 소프트웨어를 일관성 있고 예측 가능하게 생산할 수 있는지의 능력을 정량화하는 시도이다.(개발 경험의 성숙도에 따라 5개의 수준으로 나누고 각 수준별로 기본적으로 해야 할 관리활동과 프로세스를 정의)
+                          </li>
+                        </us>
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : CMM</p>
+                    <p class="moreless-content">
+                      유럽 : SPICE(ISO15504)<br />
+                      CMM -> CMMI
+                    </p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제9. 다음 아래의 보기는 제품소프트웨어 버전관리의 버전 관리 용어에 대한 설명이다. 괄호 (가 ~ 다)에 들어갈 적합한 용어를 작성하시오. </b></p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td><b>구분</b></td>
+                      <td><b>설명</b></td>
+                    </tr>
+                    <tr>
+                      <td>(가)</td>
+                      <td>
+                        <ul>
+                          관리 대상의 모든 파일, 관련 버전, 변경 이력 정보를 저장하는 공유 데이터베이스<br />
+                          - Local ( 가 ) : 현재 개발 환경에서의 파일 저장소<br />
+                          - Remote ( 가 ) : 서버상의 파일 저장소
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>(나)</td>
+                      <td>주류, 프로젝트 중심</td>
+                    </tr>
+                    <tr>
+                      <td>branch</td>
+                      <td>
+                        주류에서 파생된 프로젝트, 개발 라인<br />
+                        - Master Branch : 메인 개발 라인
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Tag</td>
+                      <td>특정 시점의 프로젝트 전체를 복사 및 보관</td>
+                    </tr>
+                    <tr>
+                      <td>Revision</td>
+                      <td>
+                        저장소에 저장된 파일의 버전<br />
+                        새롭게 저장소에 커밋할 경우, 해당 파일의 개정 번호 증가
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>(다)</td>
+                      <td>
+                        저장소에서 선택한 파일 또는 디렉토리를 현재 작업 환경으로 복사<br />
+                        디렉토리의 경우, 포함된 파일 및 하위 디렉토리 모두 ( 다 )<br />
+                        버전 관리를 위한 파일이 포함됨 (저장소와의 연결을 위함)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>check In, Commit</td>
+                      <td>작업 파일 또는 디렉토리의 변경 사항을 저장소에 새 버전으로 저장</td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">
+                      (가) : Repository<br />
+                      (나) : Trunk<br />
+                      (다) : Check Out
+                    </p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제10. 다음 아래 보기 설명에 해당하는 버전 관리 방식별 구분에 가장 적합한 용어를 작성하시오.</b></p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        <ul>
+                          <li>매일 개발 완료일은 약속된 위치의 공유 폴더에 복사</li>
+                          <li>담당자 한 명이 매일 공유 폴더의 파일을 자기 PC로 복사하고 컴파일하여 에러 확인과 정상 동작 여부 확인</li>
+                          <li>정상 동작일 경우 다음날 각 개발자들이 동작 여부 확인</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 공유폴더방식</p>
+                    <p class="moreless-content">Ex. RCS, SCCS</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- </div> -->
+            <textarea class="answer" onkeydown="resize(this)" onkeyup="resize(this)" cols="90" rows="1"></textarea>
+          </article>
+          <aside id="aside" class="sidebar" style="height: auto !important"></aside>
+        </div>
+      </section>
+    </div>
+    <script>
+      function resize(obj) {
+        obj.style.height = '1px';
+        obj.style.height = 5 + obj.scrollHeight + 'px';
+      }
+    </script>
+  </body>
+</html>

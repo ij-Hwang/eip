@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" type="text/css" href="CSS/lightbox.min.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/font.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/content.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <script src="JS/jquery-3.2.1.min.js"></script>
+    <script src="JS/lightbox-plus-jquery.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script>
+      lightbox.options.fadeDuration = 200;
+      lightbox.options.resizeDuration = 200;
+      lightbox.options.wrapAround = false;
+      lightbox.options.albumLabel = '%1 / %2';
+    </script>
+    <script>
+      var tjQuery = jQuery.noConflict(true);
+    </script>
+    <!-- <style type="text/css">
+      .tt_article_useless_p_margin p {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+    </style> -->
+
+    <style type="text/css">
+      #DragSchLayer {
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        width: 61px;
+        height: 31px;
+        margin: -30px 0px 0px -5px;
+        background: url(//search1.daumcdn.net/search/statics/common/pi/btn_drag_rect.png);
+        cursor: pointer;
+      }
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+        #DragSchLayer {
+          background-image: url(//search1.daumcdn.net/search/statics/common/pi/r2/btn_drag_rect.png);
+          background-size: 61px 31px;
+        }
+      }
+      span {
+        font-size: 15px;
+        color: #555;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>ExampleT</title>
+  </head>
+
+  <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" id="tt-body-page" class="layout-aside-right list-type-text paging-number" aria-hidden="false">
+    <script type="text/javascript" src="JS/base.js"></script>
+
+    <div id="wrap" style="height: auto !important">
+      <header id="header">
+        <div class="inner">
+          <h1>
+            <a class="subTitle">에듀_문제풀이</a>
+          </h1>
+          <nav id="gnb"></nav>
+          <nav id="eduMenu"></nav>
+        </div>
+      </header>
+      <section id="container" style="height: auto !important">
+        <div class="content-wrap" style="height: auto !important">
+          <article id="content" style="height: auto !important">
+            <!-- <div class="inner"> -->
+            <div class="entry-content">
+              <div class="tt_article_useless_p_margin contents_style">
+                <h3>10. 프로그래밍 언어 활용</h3>
+                <p data-ke-size="size16">&nbsp;</p>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제1. </b>다음은 C언어로 작성된 프로그램이다. 이를 실행한 결과를 쓰시오.</p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        #include &lt; stdio.h &gt;<br />
+                        int main(){<br />
+                        <span class="n1">int a[] = { 95, 75, 85, 100 ,50 };<br /></span>
+                        <span class="n1">int I, j, temp;<br /></span>
+                        <span class="n1">int n = sizeof(a) / sizeof(int);<br /></span>
+                        <span class="n1">for( I = 0; I < n-1; I++ ) {<br /></span>
+                        <span class="n2">for( j = 0; j < 4-i; j++ ) {<br /></span>
+                        <span class="n3">if( a[j] > a[j+1] ) {<br /></span>
+                        <span class="n4">temp = a[j];<br /></span>
+                        <span class="n4">a[j] = a[j+1] ;<br /></span>
+                        <span class="n4">a[j+1] = temp;<br /></span>
+                        <span class="n3"></span>}<br />
+                        <span class="n2"></span>}<br />
+                        <span class="n1"></span>}<br />
+                        <span class="n1"></span>for( I = 0; I < 5; I++ ) {<br />
+                        <span class="n2"></span>printf(" %d " , a[i]);<br />
+                        <span class="n1"></span>}<br />
+                        <span class="n1"></span>return 0;<br />
+                        }
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 50 75 85 95 100</p>
+                    <span class="moreless-content">sizeof(a) / sizeof(int) = 5</span>
+                    <span class="moreless-content">if( a[j] > a[j+1] ) => 부등호에 따라 오름차순, 내림차순 결정</span>
+                    <span class="moreless-content">회수 조절 조심할 것.</span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제2. </b>다음은 Java로 작성된 프로그램이다. 이를 실행한 결과를 쓰시오.</p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        public class Exam {<br />
+                        <span class="n1"></span>public static int[] makeArray(int n) {<br />
+                        <span class="n2"></span>int[] t = new int[n];<br />
+                        <span class="n2"></span>for(int i = 0; i < n; i++;) {<br />
+                        <span class="n3"></span>t[i] = i;<br />
+                        <span class="n2"></span>}<br />
+                        <span class="n2"></span>return t;<br />
+                        <span class="n1"></span>}<br />
+                        <span class="n1"></span>public static void main(String[] args ) {<br />
+                        <span class="n2"></span>int[] a = makeArray(4);<br />
+                        <span class="n2"></span>for(int i = 0; i < a.length; i++;)<br />
+                        <span class="n3"></span>System.out.print(a[i] + " "); <br />
+                        <span class="n1"></span>}<br />
+                        }
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 0 1 2 3</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제3. </b>다음은 Java로 작성된 프로그램이다. 이를 실행한 결과를 쓰시오.</p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        public class Exam {<br />
+                        <span class="n1"></span>public static void main(String[] args ) {<br />
+                        <span class="n2"></span>int i = 3, k = 1;<br />
+                        <span class="n2"></span>switch( i ) {<br />
+                        <span class="n3"></span>case 1 : k++;<br />
+                        <span class="n3"></span>case 2 : k += 3;<br />
+                        <span class="n3"></span>case 3 : k = 0;<br />
+                        <span class="n3"></span>case 4 : k += 3;<br />
+                        <span class="n3"></span>case 5 : k -= 10;<br />
+                        <span class="n3"></span>default : k--;<br />
+                        <span class="n2"></span>}<br />
+                        <span class="n2"></span>System.out.print(k);<br />
+                        <span class="n1"></span>}<br />
+                        }
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : -8</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제4. </b>다음 설명에 부합하는 마크업 언어는 무엇인지 영문 약어로 쓰시오.</p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        <ul>
+                          <li>HTML의 단점을 보완한 인터넷 언어로, SGML의 복잡한 단점을 개선한 다목적 마크업 언어이다.</li>
+                          <li>웹상에서 구조화된 문서를 상호교환 가능하도록 설계된 웹 표준 문서 포맷으로 메타 데이터 정의가 명확하다.</li>
+                          <li>사용자가 새로운 태그와 속성을 정의할 수 있는 확장성을 가진다.</li>
+                          <li>유니코드를 사용하여 전 세계의 모든 문자를 처리 가능하며 장치와 시스템에 독립적이다.</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : XML(eXtensible Markup Language)</p>
+                    <span class="moreless-content">마크업 언어 : Html, SGML, XML</span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제5. </b>다음 아래의 자바언어 코드에서 객체를 생성하기 위하여 빈칸에 알맞은 것을 쓰시오.</p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        class Parent {<br />
+                        <span class="n1"></span>void show( ) {<br />
+                        <span class="n2"></span>System.out.println("Parent");<br />
+                        <span class="n1"></span>}<br />
+                        }<br />
+                        class Child extends Parent {<br />
+                        <span class="n1"></span>void show( ) {<br />
+                        <span class="n2"></span>System.out.println("Child");<br />
+                        <span class="n1"></span>}<br />
+                        <span class="n1"></span>public static void main(String[] args) {<br />
+                        <span class="n2"></span>Parent pa = ( ??? ) Child( );<br />
+                        <span class="n2"></span>pa.show();<br />
+                        <span class="n1"></span>}<br />
+                        }
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : new (객체 생성 명령)</p>
+                    <span class="moreless-content">결과 : "Child"</span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제6. 다음 JAVA 언어로 작성된 코드의 출력 결과를 쓰시오</b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        class A {<br />
+                        <span class="n1"></span>int a;<br />
+                        <span class="n1"></span>A(int a) {<br />
+                        <span class="n2"></span>this.a = a;<br />
+                        <span class="n1"></span>}<br />
+                        <span class="n1"></span>void display(){<br />
+                        <span class="n2"></span>System.out.println("a=" + a);<br />
+                        <span class="n1"></span>}<br />
+                        }<br />
+                        class B extends A {<br />
+                        <span class="n1"></span>B(int a) {<br />
+                        <span class="n2"></span>super(a);<br />
+                        <span class="n2"></span>super.display();<br />
+                        <span class="n1"></span>}<br />
+                        }<br />
+                        public class Main {<br />
+                        <span class="n1"></span>public static void main(String[] args){<br />
+                        <span class="n2"></span>B obj = new B(10);<br />
+                        <span class="n1"></span>}<br />
+                        }
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : a=10</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제7. 다음 파이썬 언어로 작성된 코드의 출력 결과를 쓰시오.</b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        asia={“한국“, “중국“, “일본“}<br />
+                        asia.add(“베트남“)<br />
+                        asia.add(“중국“)<br />
+                        asia.remove(“일본“)<br />
+                        asia.update([“홍콩“, “한국“, “태국“])<br />
+                        print(asia)<br />
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : {'한국', '중국', '베트남', '홍콩', '태국'}</p>
+                    <span class="moreless-content"
+                      >add() : 한 항목 추가<br />
+                      remove() : 특정값 제거<br />
+                      update() : 여러개 항목 추가 -> 대괄호 꼭 사용<br />
+                    </span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b
+                      >문제 8. 브라우저가 가지고 있는 XMLHttpRequest 객체를 이용해서 전체 페이지를 새로 고치지 않고도 페이지의 일부분만을 위한 데이터를 로드하는 기법이며, 하이퍼텍스트 표기 언어(HTML) 만으로 어려 운 다양한 작업을 웹 페이지에서 구현해
+                      이용자가 웹 페이지와 자유롭게 상호 작용할 수 있도록 하는 것을 작성하시오</b
+                    >
+                  </p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : AJAX(Asynchronized javascript and XML)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제9. 사용자에게 읽기/쓰기/실행 권한을 부여하고 그룹에게는 읽기/실행을 부여 그 이외에는 실행 권 한을 a.txt에 부여하는 명령어를 한 줄로 작성하시오</b>
+                  </p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : chmod 751 a.text</p>
+                    <span class="moreless-content">chmod =change mod</span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제10. 전 세계 오픈된 정보를 하나로 묶는 방식으로 link data와 open data의 합성어가 무엇인지 작성하시오. 영어 풀 네임으로 작성하시오.</b>
+                  </p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : Linked Open Data (LOD)</p>
+                    <span class="moreless-content">Ex. 위키피디아</span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제11. 다음은 C언어로 작성된 프로그램이다. 이를 실행한 결과를 쓰시오.</b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        #include < stdio.h ><br />
+                        int main() {<br />
+                        <span class="n1"></span>int arr[] = {8, 5, 3, 1, 2, 7, 9};<br />
+                        <span class="n1"></span>int *p = arr+2, a = 0, b = 0;<br />
+                        <span class="n1"></span>a = *++p;<br />
+                        <span class="n1"></span>b = (*p)++;<br />
+                        <span class="n1"></span>printf(“%d, %d\n”, a, b);<br />
+                        <span class="n1"></span>return 0;<br />
+                        }
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 1, 1</p>
+                    <span class="moreless-content">참고) b=*p++ --> 괄호가 없어서 포인터(P)가 이동한다.</span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제12. 다음은 C언어로 작성된 프로그램이다. 이를 실행한 결과를 쓰시오. </b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        #include < stdio.h ><br />
+                        <span class="n1"></span>int f(int *i, int j) {<br />
+                        <span class="n2"></span>*i += 5;<br />
+                        <span class="n2"></span>return(2 * *i + ++j);<br />
+                        }<br />
+                        int main(void) {<br />
+                        <span class="n1"></span>int x=10, y=20;<br />
+                        <span class="n1"></span>printf("%d ", f(&x, y));<br />
+                        <span class="n1"></span>printf("%d %d\n", x, y);<br />
+                        }<br />
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 51 15 20</p>
+                    <span class="moreless-content"
+                      >j가 변해도 y는 변하지 않음<br />
+                      *i는 x를 참조하고 있기 때문에 x를 변화시킴
+                    </span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제13. 다음은 Python 언어로 작성된 프로그램이다. 이를 실행한 결과를 쓰시오.</b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        a = sum = 0<br />
+                        while a < 10:<br />
+                        <span class="n1"></span>a = a + 1<br />
+                        <span class="n1"></span>if a%2 == 0:<br />
+                        <span class="n2"></span>continue<br />
+                        <span class="n1"></span>sum += a<br />
+                        print(sum)<br />
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 25</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제14. 다음은 Python 언어로 작성된 프로그램이다. 이를 실행한 결과를 순서대로 작성하시오.</b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        a = "abcdefgh"<br />
+                        print("%7.3s" % a) ----- (가)<br />
+                        print("%-7.3s") % a) ----- (나)<br />
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <span class="moreless-content">정답</span>
+                    <span class="moreless-content n1">(가) &nbsp;&nbsp;&nbsp;&nbsp;abc</span>
+                    <span class="moreless-content n1">(나) abc&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="moreless-content">&nbsp;</span>
+                    <span class="moreless-content">7 : 전체 자리수, 3 : 출력문자수<br />- : 왼쪽정렬, +(생략) : 오른쪽정렬</span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제15. 다음은 Python 언어로 작성된 프로그램이다. 이를 실행한 결과를 쓰시오.</b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        i, aa = 0, 0<br />
+                        while (True) :<br />
+                        <span class="n1"></span>i += 1<br />
+                        <span class="n1"></span>aa += i<br />
+                        <span class="n1"></span>if i >= 100:<br />
+                        <span class="n2"></span>break<br />
+                        print(aa)<br />
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 5050</p>
+                    <span class="moreless-content">cf) 파이썬 대소문자 구분 : True(O), TRUE(X), true(X)</span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제16. 다음 Java 프로그램의 출력 결과를 작성하시오.</b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        class Test {<br />
+                        <span class="n1"></span>public static void main(String[] args) {<br />
+                        <span class="n2"></span>int a = 101;<br />
+                        <span class="n2"></span>System.out.println((a>>2) << 3);<br />
+                        <span class="n1"></span>}<br />
+                        }<br />
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 200</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제17. 다음 Java 프로그램에는 객체지향 언어의 특성인 다형성이 표현되어 있다. 아래 코드에 포함 되어 있는 다형성에 관련된 용어를 작성하시오.</b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        public class Animal{<br />
+                        <span class="n1"></span>private int legs = 4;<br />
+                        <span class="n1"></span>String name = "동물“;<br />
+                        <span class="n1"></span>public void walk() {<br />
+                        <sapn class="n2"></sapn>System.out.println(name + "(이)가 걸었습니다.“);<br />
+                        <span class="n1"></span>}<br />
+                        };<br />
+                        public class Lion extends Animal{<br />
+                        <span class="n1"></span>String name = "사자“;<br />
+                        <span class="n1"></span>public void walk(){<br />
+                        <sapn class="n2"></sapn>System.out.println(name + "가 걸었습니다.“);<br />
+                        <span class="n1"></span>}<br />
+                        };<br />
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 오버라이딩(overriding)</p>
+                    <span class="moreless-content">다형성(polymorphism) : 오버로딩, 오버라이딩</span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제18. 다음 자바 코드를 컴파일할 때, 문법 오류가 발생하는 부분을 골라서 쓰시오, </b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        class Person {<br />
+                        <span class="n1"></span>private String name;<br />
+                        <span class="n1"></span>public int age;<br />
+                        <span class="n1"></span>public void setAge(int age) {<br />
+                        <sapn class="n2"></sapn>this.age = age;<br />
+                        <span class="n1"></span>}<br />
+                        <span class="n1"></span>public String toString() {<br />
+                        <sapn class="n2"></sapn>return("name: " + this.name + ", age : " + this.age);<br />
+                        <span class="n1"></span>}<br />
+                        }<br />
+                        public class PersonTest {<br />
+                        <span class="n1"></span>public static void main(String[] args) {<br />
+                        <sapn class="n2"></sapn>Person a = new Person(); // ㉠<br />
+                        <sapn class="n2"></sapn>a.setAge(27); // ㉡<br />
+                        <sapn class="n2"></sapn>a.name = "Gildong"; // ㉢<br />
+                        <sapn class="n2"></sapn>System.out.println(a); // ㉣<br />
+                        <span class="n1"></span>}<br />
+                        }<br />
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : ㄷ. person 클래스의 name 속성이 private이기 때문에</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제19. 다음 Java 프로그램의 출력 결과를 작성하시오</b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        class Super {<br />
+                        <span class="n1"></span>Super() {<br />
+                        <span class="n2"></span>System.out.print('A');<br />
+                        <span class="n1"></span>}<br />
+                        <span class="n1"></span>Super(char x) {<br />
+                        <span class="n2"></span>System.out.print(x);<br />
+                        <span class="n1"></span>}<br />
+                        }<br />
+                        class Sub extends Super {<br />
+                        <span class="n1"></span>Sub() {<br />
+                        <span class="n2"></span>super();<br />
+                        <span class="n2"></span>System.out.print('B');<br />
+                        <span class="n1"></span>}<br />
+                        <span class="n1"></span>Sub(char x) {<br />
+                        <span class="n2"></span>this();<br />
+                        <span class="n2"></span>System.out.print(x);<br />
+                        <span class="n1"></span>}<br />
+                        }<br />
+                        public class Test {<br />
+                        <span class="n1"></span>public static void main(String[] args) {<br />
+                        <span class="n2"></span>Super s1 = new Super('C');<br />
+                        <span class="n2"></span>Super s2 = new Sub('D');<br />
+                        <span class="n1"></span>}<br />
+                        }<br />
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : C A B D</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제20. 다음 Java 프로그램에는 객체지향 언어의 특성인 다형성이 표현되어 있다. 아래 코드에 포함 되어 있는 다형성에 관련된 용어를 작성하시오.</b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        class Calc1 {<br />
+                        <span class="n1"></span>protected int a, b;<br />
+                        <span class="n1"></span>public Calc1() {<br />
+                        <span class="n2"></span>a = 1;<br />
+                        <span class="n2"></span>b = 2;<br />
+                        <span class="n1"></span>}<br />
+                        }<br />
+                        class Plus extends Calc1 {<br />
+                        <span class="n1"></span>void answer() {<br />
+                        <span class="n2"></span>System.out.println(a + "+" + b + "=" + (a + b));<br />
+                        <span class="n1"></span>}<br />
+                        <span class="n1"></span>void answer(int a, int b) {<br />
+                        <span class="n2"></span>System.out.println(a + "+" + b + "=" + (a + b));<br />
+                        <span class="n1"></span>}<br />
+                        }<br />
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 오버로딩(Overloading)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제21. 다음 함수 fib()를 사용하여 fib(5)를 실행했을 때 fib(5)를 포함한 fib() 함수의 총 호출 횟수와 최종 리턴 값을 순서대로 작성하시오</b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        int fib(int n){<br />
+                        <span class="n1"></span>if(n <= 0) return 0;<br />
+                        <span class="n1"></span>if(n == 1) return 1;<br />
+                        <span class="n1"></span>else return (fib(n-1) + fib(n-2));<br />
+                        }
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">호출회수 : 15, 최종 리턴 값 : 5</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제22. 다음 Java 프로그램의 출력 결과를 작성하시오.</b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        public class Foo {<br />
+                        <span class="n1"></span>public static void main(String[] args) {<br />
+                        <span class="n2"></span>int i, j, k;<br />
+                        <span class="n2"></span>for (i = 1, j = 1, k = 0; i < 5; i++ ) {<br />
+                        <span class="n3"></span>if ((i % 2) == 0)<br />
+                        <span class="n4"></span>continue;<br />
+                        <span class="n3"></span>k += i * j++;<br />
+                        <span class="n2"></span>}<br />
+                        <span class="n2"></span>System.out.println(k);<br />
+                        <span class="n1"></span>}<br />
+                        }<br />
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 7</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제23. 아래 Java 프로그램의 실행 결과를 작성하시오</b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td>
+                        class A {<br />
+                        <span class="n1"></span>public void f( ) { System.out.print(“1”); }<br />
+                        <span class="n1"></span>public static void g() { System.out.print(“2”); }<br />
+                        }<br />
+                        class B extends A {<br />
+                        <span class="n1"></span>public void f( ) { System.out.print(“3”); }<br />
+                        }<br />
+                        class C extends B {<br />
+                        <span class="n1"></span>public static void g( ) { System.out.print(“4”); }<br />
+                        }<br />
+                        public class D {<br />
+                        <span class="n1"></span>public static void main(String args[ ]) {<br />
+                        <span class="n2"></span>A obj = new C( );<br />
+                        <span class="n2"></span>obj.f( );<br />
+                        <span class="n2"></span>obj.g( );<br />
+                        <span class="n1"></span>}<br />
+                        }<br />
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 3, 2</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b
+                      >문제24. 객체 지향 언어에서 클래스 A와 클래스 B는 상속관계에 있다. A는 부모 클래스, B는 자식 클 래스라고 할 때 클래스 A에서 정의된 메서드(method)와 원형이 동일한 메서드를 클래스 B에서 기능 을 추가하거나 변경하여 다시 정의하는
+                      것을 무엇이라고 하는지 작성하시오.</b
+                    >
+                  </p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 오버라이딩(Overriding) -> 원형(시그니처) 동일</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제25. 다음 순서도에서 사용자가 N의 값으로 5를 입력한 경우, 출력되는 값을 작성하시오.</b>
+                  </p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td><img src="/img/sequenseD.jpg" alt="순서도" height="300px" /></td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 120</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- </div> -->
+            <textarea class="answer" onkeydown="resize(this)" onkeyup="resize(this)" cols="90" rows="1"></textarea>
+          </article>
+          <aside id="aside" class="sidebar" style="height: auto !important"></aside>
+        </div>
+      </section>
+    </div>
+    <script>
+      function resize(obj) {
+        obj.style.height = '1px';
+        obj.style.height = 5 + obj.scrollHeight + 'px';
+      }
+    </script>
+  </body>
+</html>

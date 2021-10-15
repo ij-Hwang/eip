@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" type="text/css" href="CSS/lightbox.min.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/font.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/content.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <script src="JS/jquery-3.2.1.min.js"></script>
+    <script src="JS/lightbox-plus-jquery.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script>
+      lightbox.options.fadeDuration = 200;
+      lightbox.options.resizeDuration = 200;
+      lightbox.options.wrapAround = false;
+      lightbox.options.albumLabel = '%1 / %2';
+    </script>
+    <script>
+      var tjQuery = jQuery.noConflict(true);
+    </script>
+    <!-- <style type="text/css">
+      .tt_article_useless_p_margin p {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+    </style> -->
+
+    <style type="text/css">
+      #DragSchLayer {
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        width: 61px;
+        height: 31px;
+        margin: -30px 0px 0px -5px;
+        background: url(//search1.daumcdn.net/search/statics/common/pi/btn_drag_rect.png);
+        cursor: pointer;
+      }
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+        #DragSchLayer {
+          background-image: url(//search1.daumcdn.net/search/statics/common/pi/r2/btn_drag_rect.png);
+          background-size: 61px 31px;
+        }
+      }
+      span {
+        font-size: 15px;
+        color: #555;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>ExampleT</title>
+  </head>
+
+  <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" id="tt-body-page" class="layout-aside-right list-type-text paging-number" aria-hidden="false">
+    <script type="text/javascript" src="JS/base.js"></script>
+
+    <div id="wrap" style="height: auto !important">
+      <header id="header">
+        <div class="inner">
+          <h1>
+            <a class="subTitle">에듀_문제풀이</a>
+          </h1>
+          <nav id="gnb"></nav>
+          <nav id="eduMenu"></nav>
+        </div>
+      </header>
+      <section id="container" style="height: auto !important">
+        <div class="content-wrap" style="height: auto !important">
+          <article id="content" style="height: auto !important">
+            <!-- <div class="inner"> -->
+            <div class="entry-content">
+              <div class="tt_article_useless_p_margin contents_style">
+                <h3>9. 소프트웨어 개발 보안 구축</h3>
+                <p data-ke-size="size16">&nbsp;</p>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제1.</b> 입력 데이터로부터 128비트의 축약 메시지인 해시 값을 생성하는 해시 함수로 주로 프로그램이나 파일이 원본 그대로인지를 확인하는 <b>무결성</b> 검사 용도로 많이 쓰이고 있다. 1990년 Ron Rivert가 MD4를 일방향 해시 함수로
+                    개선한 알고리즘이 무엇인지 쓰시오.
+                  </p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : MD5</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제2.</b> 올바른 용어를 작성하시오.</p>
+                  <ul>
+                    <li>( &nbsp; &nbsp; ) 는 네트워크 패킷의 출발지 IP를 변조하여 공격 대상의 자원을 소모시키는 공격으로 가용성을 낮추는 공격 유형이다.</li>
+                    <li>주로 3-Way-Handshaking의 연결지향적 특징을 가지는 서비스에서 발생된다.</li>
+                    <li>
+                      ( &nbsp; &nbsp; ) 는 출발지 IP주소와 도착지 IP주소가 동일한 특징이 있어 네트워크 모니터링 도구인 와이어샤크의 컨버세션(Conversations)기능을 통해 동일 IP주소 간에 통신 여부를 체크하는 방법으로 공격 여부를 확인할 수 있다. 해당
+                      패킷의 출발지와 도착지의 IP주소가 동일한 패킷을 기본적으로 차단하여 ( )를 막을 수 있다.
+                    </li>
+                  </ul>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 랜드어택 (Land Attack)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제3.</b> 무결성과 인증을 보장하는 인증헤더(AH)와 기밀성을 보장하는 암호화(ESP)를 이용한 프로토콜로 망 계층인 인터넷 프로토콜(IP)에서 보안성을 제공해 주는 표준화된 기술은?</p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : IPSEC</p>
+                    <span class="moreless-content">ESP : 인증 + 기밀성</span>
+                    <span class="moreless-content">cf) AH, ESP, IKE</span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제4.</b> 정보시스템 운영 중 서버가 다운되거나 자연재해나 시스템 장애 등의 이유로 고객에게 서비스가 불가능 한 경우가 종종 발생한다. 이와 같은 상황에서 비상사태 또는 업무 중단 시점으로부터 업무가 복구되어 다시 정상 가동될
+                    때까지의 시간을 의미힌다. 이와 같은 상황에서의 "비상사태 또는 업무중단 시점부터 업무가 복귀되어 다시 정상가동 될 때까지의 시간"을 의미하는 용어를 쓰시오.
+                  </p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 목표복구시간(RTO : Recovory Time Objecitve)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제5. </b>SQL Injection의 개념을 간단히 설명하시오.</p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">
+                      정답 : "사용자 입력을 받는 경우 등의 보안 취약점을 이용하여 공격자가 원하는 SQL쿼리를 실행하여 권한 등을 얻어내는 공격 방법" OR "SQL구문을 삽입하여 DB 서버의 데이터를 유출 및 변조하고 인증을 우회하는 공격"
+                    </p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제6. </b>정보보안에서 사람의 심리적인 취약점을 약용하여 비밀정보를 취득하거나 컴퓨터 접근 권한 등을 얻으려고 하는 공격 방법은 무엇인가.</p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 사회공학적 공격</p>
+                    <p class="moreless-content"><span>스미싱 등</span></p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제7. </b>아래 보기에서 능동적 보안 공격에 해당하는 것을 모두 고르시오.</p>
+                  <table>
+                    <tr>
+                      <td style="text-align: left; padding-left: 5px; font-size: 14px">ㄱ.도청<br />ㄴ.감시<br />ㄷ.신분위장<br />ㄹ.서비스 거부</td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : ㄷ,ㄹ</p>
+                    <p class="moreless-content">소극적 공격 : 스니핑(도청,감시, 훔쳐보기), 트래픽(데이터)분석</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제8. </b>다음 보기에서 설명하는 정보보호의 3대 목표를 순서대로 작성하시오.</p>
+                  <table>
+                    <tr>
+                      <td style="text-align: left; padding-left: 5px; font-size: 14px">
+                        <ol>
+                          <li>내부 정보 및 전송되는 정보에 대하여 허가 되지 않은 사용자 또는 객체가 정보의 내용을 알 수 없도록 한다.</li>
+                          <li>정보에 대한 접근 권한이 있는 사용자가 방해 받지 않고 언제든지 정보와 정보시스템을 사용할 수 있도록 보장한다.</li>
+                          <li>접근 권한이 없는 사용자에 의해 정보가 변경되지 않도록 보호하여 정보의 정확성과 완전성을 확보한다.</li>
+                        </ol>
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 1. 기밀성(confidentiality) 2. 가용성(Availability) 3. 무결성(Integrity)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제9. </b>아래에서 설명하는 보안요소를 순서대로 작성하시오</p>
+                  <table>
+                    <tr>
+                      <td style="text-align: left; padding-left: 5px; font-size: 14px">
+                        <ol>
+                          <li>자산의 손실을 초래할 수 있는 원하지 않는 사건의 잠재적인 원인이나 행위자</li>
+                          <li>원하지 않는 사건이 발생하여 손실 또는 부정적인 영향을 미칠 가능성</li>
+                          <li>자산의 잠재적인 속성으로써 위협의 이용 대상이 되는 것</li>
+                        </ol>
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 1. 위협(Threat) 2.위험(risk) 3. 취약점(Vulnerability)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제10. </b>재해복구센터에 주 센터와 동일한 수준의 시스템을 대기상태로 두어, 동기적 또는 비동기적 방식으로 실시간 복제를 통해 최신의 데이터 상태를 유지하고 있다가, 재해 시 재해복구센터의 시스템을 활성화 상태로 전환하여 복구하는
+                    방식은 어떠한 재해복구시스템 복구 방식인가.
+                  </p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 핫 사이트(Hot Site)</p>
+                    <p class="moreless-content">미러사이트(A-A), 핫(Active-Standby) 사이트, 웜(기본정보저장) 사이트, 콜드(최소정보) 사이트</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제11. </b>아래 공개키 암호 시스템 이용 과정의 빈 칸에 들어갈 내용은?</p>
+                  <table>
+                    <tr>
+                      <td style="text-align: left; padding-left: 5px; font-size: 14px">
+                        <ol>
+                          <li>B는 개인키와 공개키로 이루어진 한 쌍의 키를 생성한다</li>
+                          <li>B는 ( 1 )을 A에게 전송한다.</li>
+                          <li>A는 ( 2 )를 사용하여 메시지를 암호화 한다.</li>
+                          <li>A는 생성된 암호문을 B에게 전송한다.</li>
+                          <li>B는 ( 3 )을 사용하여 암호문을 복호화 한다.</li>
+                        </ol>
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 1.B의 공개키 2.B의 공개키 3. B의 개인키</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제12. </b>메시지 인증 코드(MAC : Message Authentication code)를 이용하여 제공할 수 있는 보안 서비스로 옳은 것은?</p>
+                  <table>
+                    <tr>
+                      <td style="text-align: left; padding-left: 5px; font-size: 14px">ㄱ.트래픽 패딩 ㄴ.메시지 무결성 ㄷ.메시지 복호화 ㄹ.메시지 송신자에 대한 인증</td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : ㄴ,ㄹ</p>
+                    <span class="moreless-content">MDC - 해시 : 무결성</span>
+                    <span class="moreless-content">MAC - 해시+(대칭)키 : 무결성+인증</span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    문제13. 대칭키 암호시스템과 공개키 암호시스템의 장점을 조합한 것을 하이브리드 암호시스템이라고 부른다. 하이브리드 암호시스템을 사용하여 송신자가 수신자에게 문서를 보낼 때의 과정을 순서대로 나열하면 다음과 같다. 각 시점에 적용되는
+                    암호시스템을 순서대로 작성하시오.
+                  </p>
+                  <table>
+                    <tr>
+                      <td style="text-align: left; font-size: 14px">
+                        <ol>
+                          <li>키를 사용하여 문서를 암호화할 때</li>
+                          <li>문서를 암•복호화 하는 데 필요한 키를 암호화할 때</li>
+                          <li>키를 사용하여 암호화된 문서를 복호화할</li>
+                        </ol>
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 1.대칭키 암호 시스템 2.공개키 암호 시스템 3. 대칭키 암호 시스템</p>
+                    <span class="moreless-content">하이브리드 : 키 분배에만 공개키 암호를 사용</span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p>
+                    <b>문제14. </b>암호화와 복호화에 동일한 키를 사용하는 비밀키 암호(secret key cipher) 방식은 공통키 암호(common key cipher) 또는 암호화와 복호화 과정이 대칭적이어서 대칭키 암호(symmetric key cipher)라고도 불리운다. 다음 아래의
+                    보기에서 대칭키 암호방식에 해당되는 것을 모두 골라서 쓰시오.
+                  </p>
+                  <table>
+                    <tr>
+                      <td style="text-align: left; font-size: 14px">ㄱ.DES ㄴ.RSA ㄷ.Elgamal ㄹ.AES</td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : ㄱ, ㄹ</p>
+                    <p class="moreless-content">대칭키=공통키=비밀키=관용키=공용키</p>
+                    <span class="moreless-content">DES {블록:64, 키 : 56, 라운드수 : 16, 구조 : 페이스텔</span>
+                    <span class="moreless-content">AES {블록:128, 키 : 128/192/256, 라운드수 : 10/12/14, 구조 : SPN 구조</span>
+                    <span class="moreless-content">RSA : 소인수분해의 어려움을 이용</span>
+                    <span class="moreless-content">Elgamal : 이산대수의 어려움을 이용</span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제15. </b> 금융기관 등의 웹사이트에서 보내온 메일로 위장하여 개인의 인증번호나 신용카드번호, 계좌번호 등을 빼내 이를 불법적으로 이용하는 사기수법에 해당되는 것을 쓰시오.</p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : g)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제16. </b>다음은 어떤 공격에 대한 패킷로그를 검출할 것을 보여주고 있다. 어떠한 공격인지 작성하시오.</p>
+                  <table>
+                    <tr>
+                      <td style="text-align: left; font-size: 14px">
+                        <ul style="list-style: none">
+                          <li>Source : 85.85.85.85</li>
+                          <li>Destination : 85.85.85.85</li>
+                          <li>Protocol : 6</li>
+                          <li>Src Port : 21845</li>
+                          <li>DST Port : 21845</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 랜드어택(land attack)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제17.</b> 다음 아래 내용은 DoS(Denial of Service) 공격의 대응 방법에 대한 설명이다. ㉠, ㉡에 들어갈 용어를 순서대로 작성하시오.</p>
+                  <ul>
+                    <li>다른 네트워크로부터 들어오는 IP broadcast 패킷을 허용하지 않으면 자신의 네트워크가 ( ㉠ ) 공격의 중간 매개지로 쓰이는 것을 막을 수 있다.</li>
+                    <li>다른 네트워크로부터 들어오는 패킷 중에 출발지 주소가 내부 IP 주소인 패킷을 차단하면 ( ㉡ ) 공격을 막을 수 있다.</li>
+                  </ul>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : ㄱ.스머프(Smurf) ㄴ.랜드어택(Land attack)</p>
+                    <p class="moreless-content">스머프(Smurf) : IP스푸핑, 다이렉트 브로드캐스트, ICMP신호</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제18. </b>다음 보기의 내용을 보고 ㉠, ㉡에 들어갈 네트워크 보안 공격을 순서대로 쓰시오.</p>
+                  <ul>
+                    <li>( ㉠ )은(는) TCP 연결 설정을 위한 3-way handshaking 과정에서 half-open 연결 시도가 가능하다는 취약성을 이용하는 공격 방식이다.</li>
+                    <li>( ㉡ )은(는) 서버와 클라이언트가 TCP 통신을 하고 있을 때, RST 패킷을 보내고 시퀀스 넘 버 등을 조작하여 연결을 가로채는 공격 방식이다.</li>
+                  </ul>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : ㄱ.신플루딩(SYN Flooding) 공격 ㄴ.세션 하이재킹(Session Hijacking)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제19. </b>아래 &lt;보기&gt;의 지문은 신문에서 발췌한 기사이다. 빈칸에 들어갈 단어로 적절한 것을 작성하시오.</p>
+                  <p>
+                    &lt;보기&gt;<br />
+                    취업준비생 김다정(28)씨는 지난 5월 7일 ( ? )공격으로 취업을 위해 모아뒀던 학습 및 준비 자료가 모두 암호화돼 버렸다. 컴퓨터 화면에는 암호를 알려주는 대가로 100달러(약 11만 5000원)를 요구하는 문구가 떴지만, 결제해도 데이터를 되찾을
+                    수 없다는 지인의 조언에 데이터복구 업체를 통해 일부 자료만 복구해 보기로 했다. 그런데 업체를 통해 데이터 일부를 복구한 지 하루 만인 지난 10일 또 다시 공격을 받아 컴퓨터가 먹통이 돼 버렸다.
+                  </p>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 랜섬웨어(Ransomware)</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제20. </b>다음에서 설명하는 보안시스템을 작성하시오.</p>
+                  <ul>
+                    <li>패킷을 버리거나 또는 의심이 가는 트래픽을 감지함으로써 공격 트래픽을 방어하는 기능을 갖고 있다.</li>
+                    <li>모든 트래픽을 수신하는 스위치의 포트들을 모니터하고 특정 트래픽을 막기 위해 적합한 명령어를 라우터(Router)나 침입차단시스템(Firewall)에 보낼 수 있다.</li>
+                    <li>호스트(Host) 기반의 이 보안시스템은 공격을 감지하기 위해 서명이나 비정상 감지기술을 사용한다.</li>
+                  </ul>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 : 침입방지시스템(IPS, Intrusion Prevention System)</p>
+                    <span class="moreless-content">침입탐지시스템(IDS,Intrusion Detect System)</span>
+                    <span class="moreless-content">침입차단시스템(Firewall)</span>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- </div> -->
+            <textarea class="answer" onkeydown="resize(this)" onkeyup="resize(this)" cols="90" rows="1"></textarea>
+          </article>
+          <aside id="aside" class="sidebar" style="height: auto !important"></aside>
+        </div>
+      </section>
+    </div>
+    <script>
+      function resize(obj) {
+        obj.style.height = '1px';
+        obj.style.height = 5 + obj.scrollHeight + 'px';
+      }
+    </script>
+  </body>
+</html>

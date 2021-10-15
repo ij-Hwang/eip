@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" type="text/css" href="CSS/lightbox.min.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/font.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/content.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <script src="JS/jquery-3.2.1.min.js"></script>
+    <script src="JS/lightbox-plus-jquery.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script>
+      lightbox.options.fadeDuration = 200;
+      lightbox.options.resizeDuration = 200;
+      lightbox.options.wrapAround = false;
+      lightbox.options.albumLabel = '%1 / %2';
+    </script>
+    <script>
+      var tjQuery = jQuery.noConflict(true);
+    </script>
+    <!-- <style type="text/css">
+      .tt_article_useless_p_margin p {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+    </style> -->
+
+    <style type="text/css">
+      #DragSchLayer {
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        width: 61px;
+        height: 31px;
+        margin: -30px 0px 0px -5px;
+        background: url(//search1.daumcdn.net/search/statics/common/pi/btn_drag_rect.png);
+        cursor: pointer;
+      }
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+        #DragSchLayer {
+          background-image: url(//search1.daumcdn.net/search/statics/common/pi/r2/btn_drag_rect.png);
+          background-size: 61px 31px;
+        }
+      }
+      span {
+        font-size: 15px;
+        color: #555;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>ExampleT</title>
+  </head>
+
+  <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" id="tt-body-page" class="layout-aside-right list-type-text paging-number" aria-hidden="false">
+    <script type="text/javascript" src="JS/base.js"></script>
+
+    <div id="wrap" style="height: auto !important">
+      <header id="header">
+        <div class="inner">
+          <h1>
+            <a class="subTitle">에듀_문제풀이</a>
+          </h1>
+          <nav id="gnb"></nav>
+          <nav id="eduMenu"></nav>
+        </div>
+      </header>
+      <section id="container" style="height: auto !important">
+        <div class="content-wrap" style="height: auto !important">
+          <article id="content" style="height: auto !important">
+            <!-- <div class="inner"> -->
+            <div class="entry-content">
+              <div class="tt_article_useless_p_margin contents_style">
+                <h3>1.</h3>
+                <p data-ke-size="size16">&nbsp;</p>
+                <div data-ke-size="size16" style="font-family: Nanum Gothic">
+                  <p><b>문제</b></p>
+                  <table style="text-align: left; padding-left: 5px; font-size: 14px">
+                    <tr>
+                      <td></td>
+                    </tr>
+                  </table>
+                  <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                    <a class="btn-toggle-moreless">더보기</a>
+                    <p class="moreless-content">정답 :</p>
+                  </div>
+                  <p data-ke-size="size16">&nbsp;</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- </div> -->
+            <textarea class="answer" onkeydown="resize(this)" onkeyup="resize(this)" cols="90" rows="1"></textarea>
+          </article>
+          <aside id="aside" class="sidebar" style="height: auto !important"></aside>
+        </div>
+      </section>
+    </div>
+    <script>
+      function resize(obj) {
+        obj.style.height = '1px';
+        obj.style.height = 5 + obj.scrollHeight + 'px';
+      }
+    </script>
+  </body>
+</html>

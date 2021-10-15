@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" type="text/css" href="CSS/lightbox.min.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/font.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/content.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+
+    <script src="JS/jquery-3.2.1.min.js"></script>
+    <script src="JS/lightbox-plus-jquery.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script>
+      lightbox.options.fadeDuration = 200;
+      lightbox.options.resizeDuration = 200;
+      lightbox.options.wrapAround = false;
+      lightbox.options.albumLabel = "%1 / %2";
+    </script>
+    <script>
+      var tjQuery = jQuery.noConflict(true);
+    </script>
+    <style type="text/css">
+      .tt_article_useless_p_margin p {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+    </style>
+
+    <style type="text/css">
+      #DragSchLayer {
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        width: 61px;
+        height: 31px;
+        margin: -30px 0px 0px -5px;
+        background: url(//search1.daumcdn.net/search/statics/common/pi/btn_drag_rect.png);
+        cursor: pointer;
+      }
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+        #DragSchLayer {
+          background-image: url(//search1.daumcdn.net/search/statics/common/pi/r2/btn_drag_rect.png);
+          background-size: 61px 31px;
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>ExampleT</title>
+  </head>
+
+  <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" id="tt-body-page" class="layout-aside-right list-type-text paging-number" aria-hidden="false">
+    <script type="text/javascript" src="JS/base.js"></script>
+
+    <div id="wrap" style="height: auto !important">
+      <header id="header">
+        <div class="inner">
+          <h1>
+            <a class="subTitle">프로그래밍1</a>
+          </h1>
+          <nav id="gnb">
+          </nav>
+        </div>
+      </header>
+      <section id="container" style="height: auto !important">
+        <div class="content-wrap" style="height: auto !important">
+          <article id="content" style="height: auto !important">
+            <!-- <div class="inner"> -->
+            <div class="entry-content">
+              <div class="tt_article_useless_p_margin contents_style" style="height: auto !important">
+                <p data-ke-size="16">• 2020~2021 복원문제 모음</p>
+                <p data-ke-size="16">• JAVA (12문제) - C (8문제) - Python (4문제) - SQL (12문제) 순서</p>
+                <h4 data-ke-size="size20">
+                  <span style="font-family: 'Nanum Gothic'"><b>[JAVA]</b></span>
+                </h4>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>1. 배열 결과 입력</b></span>
+                </p>
+                <pre
+                  id="code_1631493629173"
+                  class="java"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="java"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span> </span>{
+                    <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> nSize = <span class="hljs-number">4</span>;
+                    
+                    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                      <span class="hljs-keyword">int</span>[] arr = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[nSize];
+                        makeArray(arr);
+                        
+                        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>; i&lt;nSize; i++) {
+                          System.out.print(arr[i] + <span class="hljs-string">" "</span>);
+                        }
+                    }
+                    
+                    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">makeArray</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] arr)</span> </span>{
+                      <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>; i&lt;nSize; i++) {
+                          arr[i] = i;
+                        }
+                    }
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-ke-type="moreLess" data-text-more="더보기" data-text-less="닫기">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.75; margin-top: 0px; margin-bottom: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b
+                          ><span style="margin-top: 0px; margin-bottom: 0px">답안 :&nbsp;<span style="margin-top: 0px; margin-bottom: 0px; color: #ee2323">0 1 2 3</span></span></b
+                        ><b><span style="color: #ee2323"></span></b
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>2. 자바 객체 생성 (&nbsp; &nbsp;) 채우기 ( 2020년 2회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631493899702"
+                  class="java"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="java"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Parent</span></span>{
+                    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span></span>{
+                        System.out.println(<span class="hljs-string">""</span>Parent<span class="hljs-string">""</span>);
+                    }
+                }
+                
+                <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Child</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Parent</span></span>{
+                    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span></span>{
+                        System.out.println(<span class="hljs-string">""</span>Child<span class="hljs-string">""</span>);
+                    }
+                }
+                
+                <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span></span>{
+                    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                        Parent pa = (       ) Child();
+                        pa.show();
+                    }
+                }
+                
+                출력결과
+                Child
+                <span class="hljs-string">"</span></code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-ke-type="moreLess" data-text-more="더보기" data-text-less="닫기">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.75; margin-top: 0px; margin-bottom: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b
+                          ><span style="margin-top: 0px; margin-bottom: 0px">답안 :&nbsp;<span style="margin-top: 0px; margin-bottom: 0px; color: #ee2323">new</span></span></b
+                        ><b><span style="color: #ee2323"></span></b
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>3.&nbsp; 자바 상속, super 키워드 이용 결과값 묻는 문제 ( 2020년 2회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631493969182"
+                  class="java"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="java"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{
+                    <span class="hljs-keyword">int</span> a;
+                
+                    A(<span class="hljs-keyword">int</span> a) {
+                        <span class="hljs-keyword">this</span>.a = a;
+                    }
+                
+                    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">display</span><span class="hljs-params">()</span> </span>{
+                        System.out.println(<span class="hljs-string">""</span>a=<span class="hljs-string">""</span>+a);
+                    }
+                }
+                <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
+                    B(<span class="hljs-keyword">int</span> a) {
+                        <span class="hljs-keyword">super</span>(a);
+                        <span class="hljs-keyword">super</span>.display();
+                    }
+                }
+                <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{
+                        B obj = <span class="hljs-keyword">new</span> B(<span class="hljs-number">10</span>);
+                    }
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-ke-type="moreLess" data-text-more="더보기" data-text-less="닫기">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.75; margin-top: 0px; margin-bottom: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b
+                          ><span style="margin-top: 0px; margin-bottom: 0px">답안 :&nbsp;<span style="margin-top: 0px; margin-bottom: 0px; color: #ee2323">a=10</span></span></b
+                        ><b><span style="color: #ee2323"></span></b
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>4. 다음의 출력 결과를 쓰시오. ( 2020년 3회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631494102409"
+                  class="java"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="java"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span></span>{
+                
+                    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String []args)</span></span>{
+                        <span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;
+                        <span class="hljs-keyword">int</span> sum=<span class="hljs-number">0</span>;
+                        <span class="hljs-keyword">while</span> (i&lt;<span class="hljs-number">10</span>){
+                            i++;
+                            <span class="hljs-keyword">if</span>(i%<span class="hljs-number">2</span>==<span class="hljs-number">1</span>)
+                              <span class="hljs-keyword">continue</span>;
+                        sum += i;
+                        }
+                    System.out.print(sum);
+                    }
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px; margin-bottom: 0px">
+                      <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><span style="margin-top: 0px; margin-bottom: 0px"
+                            ><b
+                              ><span style="margin-top: 0px; margin-bottom: 0px; color: #333333"
+                                ><b
+                                  ><span style="margin-top: 0px; margin-bottom: 0px; color: #333333">답안 :&nbsp;<span style="margin-top: 0px; margin-bottom: 0px; color: #ee2323">30</span></span></b
+                                ></span
+                              ></b
+                            ></span
+                          ><b></b
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>5. 다음의 출력 결과를 쓰시오. ( 2020년 3회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631494158532"
+                  class="arduino"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="java"
+                  data-ke-type="codeblock"
+                ><code class="hljs java"><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Vehicle</span></span>{
+                 String name;
+                 <span class="hljs-function"><span class="hljs-keyword">abstract</span> <span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(String val)</span></span>; 
+                
+                 <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">()</span></span>{
+                 <span class="hljs-keyword">return</span> <span class="hljs-string">"Vehicle name :"</span> + name;
+                 }
+                } 
+                
+                 
+                
+                <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Vehicle</span></span>{
+                 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Car</span><span class="hljs-params">(String val)</span></span>{
+                 name = <span class="hljs-keyword">super</span>.name = val;
+                 }
+                 <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(String val)</span></span>{
+                 <span class="hljs-keyword">return</span> <span class="hljs-string">"Car name :"</span> + val;
+                 }
+                 <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">byte</span> val[])</span></span>{
+                 <span class="hljs-keyword">return</span> <span class="hljs-string">"Car name :"</span> + val;
+                 }
+                }
+                
+                
+                <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span></span>{
+                 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{
+                 Vehicle obj = <span class="hljs-keyword">new</span> Car(<span class="hljs-string">"Spark"</span>);
+                 System.out.printf(obj.getName());
+                 }
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px; margin-bottom: 0px">
+                      <p style="line-height: 1.75; margin-top: 0px; margin-bottom: 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><span style="margin-top: 0px; margin-bottom: 0px"
+                            ><b>답안 :&nbsp;<span style="margin-top: 0px; margin-bottom: 0px; color: #ee2323">Vehicle name :Spark</span></b></span
+                          ><b><span style="color: #ee2323"></span></b
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>6. 다음 빈 칸에 알맞은 답을 쓰시오. ( 10을 2진수로 변환 ) ( 2020년 4,5회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631494365943"
+                  class="java"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 15px; color: #383a42; background: #f6f7f8; font-size: 14px; border-radius: 3px; font-family: Menlo, Consolas, Monaco, monospace; border: 1px solid #dddddd; cursor: default; z-index: 1"
+                  data-ke-language="java"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span> </span>{ 
+                   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{   
+                      <span class="hljs-keyword">int</span> a[] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">8</span>];
+                      <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>, n = <span class="hljs-number">10</span>;
+                      <span class="hljs-keyword">while</span> ( ① ) {  
+                         a[i++] = ②; 
+                         n /= <span class="hljs-number">2</span>; 
+                      } 
+                      <span class="hljs-keyword">for</span> (i=<span class="hljs-number">7</span>; i&gt;=<span class="hljs-number">0</span>; i--)
+                         System.out.printf(<span class="hljs-string">"%d"</span>, a[i]);
+                      }
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><span style="color: #333333"
+                              ><b
+                                ><span style="color: #333333">답안 :&nbsp;<span style="color: #ee2323">① n &gt; 0 ② n % 2</span></span></b
+                              ></span
+                            ></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><span style="margin-top: 0px; color: #333333"
+                            ><b
+                              ><span style="margin-top: 0px"
+                                ><b
+                                  ><span style="margin-top: 0px"><span style="margin-top: 0px">답안 외의 실행 결과가 동일하면 대부분 정답으로 인정</span></span></b
+                                ></span
+                              ></b
+                            ></span
+                          ><b
+                            ><span style="color: #333333"
+                              ><b
+                                ><span style="color: #333333"><span style="color: #ee2323"></span></span></b></span></b></span
+                        ><span style="font-family: 'Nanum Gothic'"><b></b></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>7. 3행 5열 배열 출력 시 배열 크기 지정하는 문제 (int [][]) ( 2020년 4,5회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631494390667"
+                  class="java"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="java"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span> </span>{ 
+                   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{   
+                
+                     <span class="hljs-keyword">int</span>[][] array = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[①][②];
+                
+                    <span class="hljs-keyword">int</span> n = <span class="hljs-number">1</span>;
+                
+                    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++) {
+                
+                      <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; <span class="hljs-number">5</span>; j++) {
+                
+                        array[i][j] = j*<span class="hljs-number">3</span> + (i+<span class="hljs-number">1</span>);
+                
+                        System.out.print(array[i][j] + <span class="hljs-string">""</span>);
+                
+                      }
+                
+                      System.out.println();
+                
+                    }
+                
+                  }
+                
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.75; margin-top: 0px; margin-bottom: 0px" data-ke-size="size16">
+                      <span style="caret-color: auto; letter-spacing: 0px; font-family: 'Nanum Gothic'"
+                        ><span style="color: #333333"
+                          ><span style="color: #333333"
+                            ><b>문제유형 :<span>&nbsp;</span><span style="color: #006dd7">프로그래밍(JAVA) / 2018년 2회차 기출</span></b></span
+                          ></span
+                        ></span
+                      >
+                    </p>
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b
+                            >답안 :<span>&nbsp;</span
+                            ><b
+                              ><span style="color: #333333"
+                                ><b
+                                  ><span style="color: #333333"><span style="color: #ee2323">① 3 ② 5</span></span></b
+                                ></span
+                              ></b
+                            ></b
+                          ><b><span style="color: #ee2323"></span></b></span
+                        ><span style="font-family: 'Nanum Gothic'"
+                          ><b><b></b></b><b></b
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>8. 실행 결과를 쓰시오. ( 2020년 4, 5회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631494579727"
+                  class="java"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="java"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Parent</span></span>{
+                 <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">compute</span><span class="hljs-params">(<span class="hljs-keyword">int</span> num)</span> </span>{
+                  <span class="hljs-keyword">if</span>( num &lt;= <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> num;
+                  <span class="hljs-keyword">return</span> compute(num-<span class="hljs-number">1</span>) + compute(num-<span class="hljs-number">2</span>);
+                 }
+                }
+                
+                <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Child</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Parent</span> </span>{
+                 <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">compute</span><span class="hljs-params">(<span class="hljs-keyword">int</span> num)</span> </span>{
+                  <span class="hljs-keyword">if</span>( num &lt;= <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> num;
+                  <span class="hljs-keyword">return</span> compute(num-<span class="hljs-number">1</span>) + compute(num-<span class="hljs-number">3</span>);
+                 }
+                }
+                
+                Class Test{
+                 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span> <span class="hljs-params">(String[] args)</span></span>{
+                  Parent obj = <span class="hljs-keyword">new</span> Child();
+                  System.out.print(obj.compute(<span class="hljs-number">4</span>));
+                 }
+                }<span class="hljs-string">"</span></code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b></b><b><span style="color: #006dd7"></span></b
+                          ><b
+                            >답안 :<span>&nbsp;</span><span style="color: #ee2323"><b>1</b></span></b
+                          ></span
+                        ><span style="font-family: 'Nanum Gothic'"
+                          ><b
+                            ><span style="color: #ee2323"><b></b></span></b
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"
+                    ><b>9. JAVA 문제<span>&nbsp;</span><b> ( 부분점수 없음 ) ( 2021년 1회 )</b></b></span
+                  >
+                </p>
+                <pre
+                  id="code_1631494748546"
+                  class="java"
+                  style="
+                    margin: 20px auto 0px;
+                    display: block;
+                    overflow: auto;
+                    padding: 20px;
+                    color: #383a42;
+                    background: #f8f8f8;
+                    font-size: 14px;
+                    font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace;
+                    border: 1px solid #ebebeb;
+                    line-height: 1.71;
+                    cursor: default;
+                    z-index: 1;
+                    font-style: normal;
+                    font-variant-ligatures: normal;
+                    font-variant-caps: normal;
+                    font-weight: 400;
+                    letter-spacing: normal;
+                    orphans: 2;
+                    text-align: start;
+                    text-indent: 0px;
+                    text-transform: none;
+                    widows: 2;
+                    word-spacing: 0px;
+                    -webkit-text-stroke-width: 0px;
+                    text-decoration-thickness: initial;
+                    text-decoration-style: initial;
+                    text-decoration-color: initial;
+                  "
+                  data-ke-language="java"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ssoTest</span></span>{
+                
+                     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String []args)</span></span>{
+                        <span class="hljs-keyword">int</span> a[][] = {{<span class="hljs-number">45</span>, <span class="hljs-number">50</span>, <span class="hljs-number">75</span>}, {<span class="hljs-number">89</span>}};
+                        System.out.println(a[<span class="hljs-number">0</span>].length);
+                        System.out.println(a[<span class="hljs-number">1</span>].length);
+                        System.out.println(a[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]);
+                        System.out.println(a[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>]);
+                        System.out.println(a[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>]);
+                     }
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b></b
+                        ><b
+                          ><b><span style="color: #006dd7"></span></b></b
+                        ><b>답안</b><b></b
+                      ></span>
+                    </p>
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'; color: #ee2323"><b>3</b></span>
+                    </p>
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'; color: #ee2323"><b>1</b></span>
+                    </p>
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'; color: #ee2323"><b>45</b></span>
+                    </p>
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'; color: #ee2323"><b>50</b></span>
+                    </p>
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'; color: #ee2323"><b>89</b></span
+                      ><span style="color: #ee2323; font-family: 'Nanum Gothic'"><b></b></span><span style="font-family: 'Nanum Gothic'; color: #ee2323"><b></b></span><span style="color: #ee2323; font-family: 'Nanum Gothic'"></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>10. JAVA 문제 ( 부분점수 없음 ) ( 2021년 1회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631494836135"
+                  class="java"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 15px; color: #383a42; background: #f6f7f8; font-size: 14px; border-radius: 3px; font-family: Menlo, Consolas, Monaco, monospace; border: 1px solid #dddddd; cursor: default; z-index: 1"
+                  data-ke-language="java"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ssoTest</span> </span>{
+                    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                        <span class="hljs-keyword">int</span> j, i;
+                        <span class="hljs-keyword">for</span> (j = <span class="hljs-number">0</span>, i = <span class="hljs-number">0</span>; i &lt;= <span class="hljs-number">5</span>; i++) {
+                            j += i;
+                            System.out.print(i);
+                            <span class="hljs-keyword">if</span> (i == <span class="hljs-number">5</span>) {
+                                System.out.print(<span class="hljs-string">"="</span>);
+                                System.out.print(j);
+                            } <span class="hljs-keyword">else</span> {
+                                System.out.print(<span class="hljs-string">"+"</span>);
+                            }
+                        }
+                    }
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">&nbsp;</div>
+                    <p style="line-height: 1.75" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b>답안 :<span>&nbsp;</span></b
+                        ><b
+                          ><span style="color: #333333"
+                            ><span style="color: #333333"><span style="color: #ee2323">0+1+2+3+4+5=15</span></span></span
+                          ></b
+                        ></span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <b><span style="font-family: 'Nanum Gothic'">11. JAVA - 이것은 클래스 내에서 객체 생성 없이 사용할 수 있는 메소드이다. 다음의 출력 결과를 보고 괄호안에 알맞은 답안을 작성하시오. ( 2021년 2회 )</span></b>
+                </p>
+                <pre
+                  id="code_1631495067493"
+                  class="c++ arduino"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="c++"
+                  data-ke-type="codeblock"
+                ><code class="hljs cpp"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span> {</span>
+                
+                  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                
+                    System.out.print(check(<span class="hljs-number">1</span>));
+                
+                  }	
+                
+                  (           ) <span class="hljs-function">String <span class="hljs-title">check</span><span class="hljs-params">(<span class="hljs-keyword">int</span> num)</span> </span>{
+                
+                    <span class="hljs-keyword">return</span> (num &gt;= <span class="hljs-number">0</span>) ? <span class="hljs-string">"positive"</span> : <span class="hljs-string">"negative"</span>;
+                
+                  }
+                
+                }
+                
+                [결과]
+                positive</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-ke-type="moreLess" data-text-more="더보기" data-text-less="닫기">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"></span
+                      ><span style="font-family: Nanum Gothic"
+                        ><b><b></b></b
+                        ><b
+                          >답안 :&nbsp;<span style="color: #ee2323"
+                            ><b><span style="color: #ff0000">static</span></b></span
+                          >&nbsp;</b
+                        ></span
+                      ><span style="font-family: Nanum Gothic"
+                        ><b><span style="color: #ee2323"></span></b></span
+                      ><span style="font-family: Nanum Gothic"><b></b></span><span style="font-family: Nanum Gothic"><b></b></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <b><span style="font-family: 'Nanum Gothic'">12. JAVA 상속, 오버라이딩 ( 2021년 2회 )</span></b>
+                </p>
+                <pre
+                  id="code_1631495111860"
+                  class="c++ arduino"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="c++"
+                  data-ke-type="codeblock"
+                ><code class="hljs cpp"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ovr1</span> {</span>
+                
+                  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                
+                    ovr1 a1 = <span class="hljs-keyword">new</span> ovr1();
+                
+                    ovr2 a2 = <span class="hljs-keyword">new</span> ovr2();
+                
+                    System.out.println(a1.sun(<span class="hljs-number">3</span>,<span class="hljs-number">2</span>) + a2.sun(<span class="hljs-number">3</span>,<span class="hljs-number">2</span>));
+                
+                  }
+                
+                  <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">sun</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>{
+                
+                    <span class="hljs-keyword">return</span> x + y;
+                
+                  }
+                
+                }
+                
+                <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ovr2</span> <span class="hljs-title">extends</span> <span class="hljs-title">ovr1</span> {</span>
+                
+                  <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">sun</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>{
+                
+                    <span class="hljs-keyword">return</span> x - y + super.sun(x, y);
+                
+                  }
+                
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-ke-type="moreLess" data-text-more="더보기" data-text-less="닫기">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"></span
+                      ><span style="font-family: Nanum Gothic"
+                        ><b><b></b></b
+                        ><b
+                          >답안 :<span>&nbsp;</span><b><span style="color: #ff0000">11</span></b
+                          >&nbsp;</b
+                        ></span
+                      ><span style="font-family: Nanum Gothic"
+                        ><b><span style="color: #ee2323"></span></b></span
+                      ><span style="font-family: Nanum Gothic"><b></b></span><span style="font-family: Nanum Gothic"><b></b></span><span style="font-family: Nanum Gothic"><b></b></span><span style="font-family: Nanum Gothic"><b></b></span><span style="font-family: Nanum Gothic"></span><span style="font-family: Nanum Gothic"></span><span style="font-family: Nanum Gothic"><b></b></span
+                      ><span style="font-family: Nanum Gothic"><b></b></span><span style="font-family: Nanum Gothic"></span><span style="font-family: Nanum Gothic"></span><span style="font-family: Nanum Gothic"></span><span style="font-family: Nanum Gothic"></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <h4 data-ke-size="size20">
+                  <span style="font-family: 'Nanum Gothic'"><b>[C언어]</b></span>
+                </h4>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>1. 버블 정렬 오름차순 문제 ( 2020년 1회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631493591168"
+                  class="c++ arduino"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="c++"
+                  data-ke-type="codeblock"
+                ><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> SIZE 5</span>
+                
+                <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span> </span>{
+                  <span class="hljs-keyword">int</span> arr[SIZE] = {<span class="hljs-number">75</span>, <span class="hljs-number">100</span>, <span class="hljs-number">95</span>, <span class="hljs-number">50</span>, <span class="hljs-number">85</span>};
+                    <span class="hljs-keyword">int</span> i, j, temp;
+                    <span class="hljs-keyword">for</span>(i = <span class="hljs-number">1</span>; i &lt; SIZE; i++) {
+                        <span class="hljs-keyword">for</span>(j=<span class="hljs-number">0</span>; j &lt; SIZE-i; j++) {
+                                <span class="hljs-keyword">if</span>(arr[j] &gt; arr[j+<span class="hljs-number">1</span>]) {
+                                        temp = arr[j];
+                                              arr[j] arr[j+<span class="hljs-number">1</span>];
+                                              arr[j+<span class="hljs-number">1</span>] = temp;
+                                    }
+                            }
+                    }
+                    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>; i&lt;SIZE; i++) {
+                      <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d"</span>, arr[i]);
+                    }
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-ke-type="moreLess" data-text-more="더보기" data-text-less="닫기">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.75; margin-top: 0px; margin-bottom: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b
+                          ><span style="margin-top: 0px; margin-bottom: 0px">답안 : <span style="color: #ee2323">50 75 85 95 100</span></span></b
+                        ><b></b
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>2. switch ~ case 결과 입력 ( 2020년 1회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631493674993"
+                  class="c++ arduino"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="c++"
+                  data-ke-type="codeblock"
+                ><code class="hljs cpp"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span> {</span>
+                
+                  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                    
+                    <span class="hljs-keyword">int</span> i=<span class="hljs-number">3</span>, k=<span class="hljs-number">1</span>;
+                    
+                        <span class="hljs-keyword">switch</span>(i){
+                      <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>: 
+                      <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>: 
+                      <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>: 
+                      <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>: k=<span class="hljs-number">0</span>;
+                      <span class="hljs-keyword">case</span> <span class="hljs-number">4</span>: k+=<span class="hljs-number">3</span>;
+                      <span class="hljs-keyword">case</span> <span class="hljs-number">5</span>: k-=<span class="hljs-number">10</span>;
+                      <span class="hljs-keyword">default</span>: k--;
+                    }
+                        
+                    System.out.println(k);
+                  }
+                    
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-ke-type="moreLess" data-text-more="더보기" data-text-less="닫기">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.75; margin-top: 0px; margin-bottom: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b
+                          ><span
+                            style="margin-top: 0px; margin-bottom: 0px"
+                            data-sheets-value='{"1":2,"2":"Java 결과 작성하는거 i=3 / a? =1; switch(i)  case1: i++. Case3:a=0;\ni=3, k=1;\nswitch(i){\n case 0: \n case 1: \n case 2: \n case 3: k=0;\n case 4: k+=3;\n case 5: k-=10;\n default: k--;\n}\n system.out.print(k);\n"}'
+                            data-sheets-userformat='{"2":13245,"3":{"1":0},"5":{"1":[{"1":2,"2":0,"5":[null,2,0]},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"6":{"1":[{"1":2,"2":0,"5":[null,2,0]},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"7":{"1":[{"1":2,"2":0,"5":[null,2,0]},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"8":{"1":[{"1":2,"2":0,"5":[null,2,0]},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"10":1,"11":4,"12":0,"15":"Comic Sans MS","16":11}'
+                            >답안 : <span style="color: #ee2323">-8</span></span
+                          ></b
+                        ></span
+                      >
+                    </p>
+                    <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b
+                          ><span
+                            style="margin-top: 0px; margin-bottom: 0px"
+                            data-sheets-value='{"1":2,"2":"Java 결과 작성하는거 i=3 / a? =1; switch(i)  case1: i++. Case3:a=0;\ni=3, k=1;\nswitch(i){\n case 0: \n case 1: \n case 2: \n case 3: k=0;\n case 4: k+=3;\n case 5: k-=10;\n default: k--;\n}\n system.out.print(k);\n"}'
+                            data-sheets-userformat='{"2":13245,"3":{"1":0},"5":{"1":[{"1":2,"2":0,"5":[null,2,0]},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"6":{"1":[{"1":2,"2":0,"5":[null,2,0]},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"7":{"1":[{"1":2,"2":0,"5":[null,2,0]},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"8":{"1":[{"1":2,"2":0,"5":[null,2,0]},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"10":1,"11":4,"12":0,"15":"Comic Sans MS","16":11}'
+                            >해설</span
+                          ></b
+                        ></span
+                      >
+                    </p>
+                    <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                      <span
+                        style="margin-top: 0px; margin-bottom: 0px; font-family: 'Nanum Gothic'"
+                        data-sheets-value='{"1":2,"2":"Java 결과 작성하는거 i=3 / a? =1; switch(i)  case1: i++. Case3:a=0;\ni=3, k=1;\nswitch(i){\n case 0: \n case 1: \n case 2: \n case 3: k=0;\n case 4: k+=3;\n case 5: k-=10;\n default: k--;\n}\n system.out.print(k);\n"}'
+                        data-sheets-userformat='{"2":13245,"3":{"1":0},"5":{"1":[{"1":2,"2":0,"5":[null,2,0]},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"6":{"1":[{"1":2,"2":0,"5":[null,2,0]},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"7":{"1":[{"1":2,"2":0,"5":[null,2,0]},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"8":{"1":[{"1":2,"2":0,"5":[null,2,0]},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"10":1,"11":4,"12":0,"15":"Comic Sans MS","16":11}'
+                        >break문 생략 : 일치하는 실행문부터 switch문이 종료될 때 까지 모든 문장 실행</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>3. 다음의 출력 결과를 쓰시오. ( 2020년 3회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631494040172"
+                  class="cpp"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="java"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+                
+                <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+                  <span class="hljs-keyword">int</span> c=<span class="hljs-number">0</span>;
+                    <span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;
+                    
+                    <span class="hljs-keyword">while</span>(i&lt;<span class="hljs-number">10</span>) {
+                      i++;
+                        c *= i;
+                    }
+                    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d"</span>, c);
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px; margin-bottom: 0px">
+                      <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><span style="margin-top: 0px; margin-bottom: 0px"
+                            ><b
+                              ><span style="margin-top: 0px; margin-bottom: 0px; color: #333333">답안 :&nbsp;<span style="margin-top: 0px; margin-bottom: 0px; color: #ee2323">0</span></span></b
+                            ></span
+                          ><b></b
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>4.&nbsp;</b><b>다음의 출력 결과를 쓰시오. ( 2020년 3회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631494187555"
+                  class="cpp"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="cs"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">r1</span><span class="hljs-params">( )</span></span>{
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">4</span>;
+                }
+                
+                <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">r10</span><span class="hljs-params">( )</span></span>{
+                    <span class="hljs-keyword">return</span> (<span class="hljs-number">30</span>+r1( ));
+                }
+                
+                <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">r100</span><span class="hljs-params">( )</span></span>{
+                    <span class="hljs-keyword">return</span> (<span class="hljs-number">200</span>+r10( ));
+                }
+                
+                <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">( )</span></span>{
+                    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>, r100( ));
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px; margin-bottom: 0px">
+                      <p style="line-height: 1.75; margin-top: 0px; margin-bottom: 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><span style="margin-top: 0px; margin-bottom: 0px"
+                            ><b>답안 :&nbsp;<span style="margin-top: 0px; margin-bottom: 0px; color: #ee2323">234</span></b></span
+                          ><b><span style="color: #ee2323"></span></b
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>5. 실행결과를 쓰시오. ( 2020년 4, 5회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631494544653"
+                  class="c++ arduino"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="c++"
+                  data-ke-type="codeblock"
+                ><code class="hljs cpp"><span class="hljs-keyword">char</span> *p = <span class="hljs-string">""</span>KOREA<span class="hljs-string">""</span>;
+                <span class="hljs-built_in">printf</span>(<span class="hljs-string">""</span>%s\n<span class="hljs-string">""</span>, p);
+                <span class="hljs-built_in">printf</span>(<span class="hljs-string">""</span>%s\n<span class="hljs-string">""</span>, p+<span class="hljs-number">3</span>);
+                <span class="hljs-built_in">printf</span>(<span class="hljs-string">""</span>%c\n<span class="hljs-string">""</span>, *p);
+                <span class="hljs-built_in">printf</span>(<span class="hljs-string">""</span>%c\n<span class="hljs-string">""</span>, *(p+<span class="hljs-number">3</span>));
+                <span class="hljs-built_in">printf</span>(<span class="hljs-string">""</span>%c\n<span class="hljs-string">""</span>, *p+<span class="hljs-number">2</span>);<span class="hljs-string">"</span></code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="color: #000000"><b>답안 :</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <b
+                          ><span
+                            ><span><span style="color: #ee2323">KOREA</span></span></span
+                          ></b
+                        >
+                      </p>
+                    </div>
+                    <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"
+                        ><b
+                          ><span style="color: #333333"
+                            ><span style="color: #333333"><span style="color: #ee2323">EA</span></span></span
+                          ></b
+                        ></span
+                      >
+                    </p>
+                    <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"
+                        ><b
+                          ><span style="color: #333333"
+                            ><span style="color: #333333"><span style="color: #ee2323">K</span></span></span
+                          ></b
+                        ></span
+                      >
+                    </p>
+                    <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"
+                        ><b
+                          ><span style="color: #333333"
+                            ><span style="color: #333333"><span style="color: #ee2323">E</span></span></span
+                          ></b
+                        ></span
+                      >
+                    </p>
+                    <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"
+                        ><b
+                          ><span style="color: #333333"
+                            ><span style="color: #333333"><span style="color: #ee2323">M</span></span></span
+                          ></b
+                        ></span
+                      ><span style="font-family: Nanum Gothic"><b></b></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>6. C언어</b></span>
+                </p>
+                <pre
+                  id="code_1631494816627"
+                  class="c++ arduino"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="c++"
+                  data-ke-type="codeblock"
+                ><code class="hljs cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+                
+                    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">insa</span> {</span>
+                
+                        <span class="hljs-keyword">char</span> name[<span class="hljs-number">10</span>];
+                
+                        <span class="hljs-keyword">int</span> age;
+                
+                    } a[] = {<span class="hljs-string">"Kim"</span>, <span class="hljs-number">28</span>, <span class="hljs-string">"Lee"</span>, <span class="hljs-number">38</span>, <span class="hljs-string">"Park"</span>, <span class="hljs-number">41</span>, <span class="hljs-string">"Choi"</span>, <span class="hljs-number">30</span>};
+                
+                    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">insa</span> *<span class="hljs-title">p</span>;</span>
+                
+                    p = a;
+                
+                    p++;
+                
+                    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%s "</span>, p-&gt;name);
+                
+                    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>, p-&gt;age);
+                
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b></b><b><span style="color: #006dd7"></span></b><b>답안 :&nbsp;</b><b>&nbsp;</b></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b><span style="color: #ee2323">Lee</span></b></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b><span style="color: #ee2323">38</span></b></span
+                        ><span style="font-family: Nanum Gothic"
+                          ><b><span style="color: #ee2323"></span></b
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <b><span style="font-family: 'Nanum Gothic'">7. C언어 ( 2021년 2회 )</span></b>
+                </p>
+                <pre
+                  id="code_1631495044788"
+                  class="c++ arduino"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="c++"
+                  data-ke-type="codeblock"
+                ><code class="hljs cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">mp</span><span class="hljs-params">(<span class="hljs-keyword">int</span> base, <span class="hljs-keyword">int</span> <span class="hljs-built_in">exp</span>)</span></span>;
+                
+                <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+                
+                  <span class="hljs-keyword">int</span> res;	
+                
+                  res = mp(<span class="hljs-number">2</span>, <span class="hljs-number">10</span>);
+                
+                  <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>, res);	
+                
+                  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+                
+                }
+                
+                <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">mp</span><span class="hljs-params">(<span class="hljs-keyword">int</span> base, <span class="hljs-keyword">int</span> <span class="hljs-built_in">exp</span>)</span> </span>{
+                
+                  <span class="hljs-keyword">int</span> res = <span class="hljs-number">1</span>;
+                
+                  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-built_in">exp</span>; i++) {
+                
+                    res = res * base;
+                
+                  }
+                
+                  <span class="hljs-keyword">return</span> res;
+                
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-ke-type="moreLess" data-text-more="더보기" data-text-less="닫기">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"></span
+                      ><span style="font-family: Nanum Gothic"
+                        ><b><b></b></b><b>답안 :<span>&nbsp;</span><span style="color: #ee2323">1024</span></b></span
+                      ><span style="font-family: Nanum Gothic"
+                        ><b><span style="color: #ee2323"></span></b></span
+                      ><span style="font-family: Nanum Gothic"
+                        ><b><span style="color: #ee2323"></span></b
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <b><span style="font-family: 'Nanum Gothic'">8. C언어 ( 2021년 2회 )</span></b>
+                </p>
+                <pre
+                  id="code_1631495089379"
+                  class="c++ arduino"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="c++"
+                  data-ke-type="codeblock"
+                ><code class="hljs cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+                
+                  <span class="hljs-keyword">int</span> ary[<span class="hljs-number">3</span>];
+                
+                  <span class="hljs-keyword">int</span> s = <span class="hljs-number">0</span>;
+                
+                  *(ary + <span class="hljs-number">0</span>) = <span class="hljs-number">1</span>;
+                
+                  ary[<span class="hljs-number">1</span>] = *(ary + <span class="hljs-number">0</span>) + <span class="hljs-number">2</span>;
+                
+                  ary[<span class="hljs-number">2</span>] = *ary + <span class="hljs-number">3</span>;
+                
+                  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++) {
+                
+                    s = s + ary[i];
+                
+                  }
+                
+                  <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d"</span>, s);
+                
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-ke-type="moreLess" data-text-more="더보기" data-text-less="닫기">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"></span
+                      ><span style="font-family: Nanum Gothic"
+                        ><b><b></b></b
+                        ><b
+                          >답안 :&nbsp;<span style="color: #ee2323"
+                            ><b><span style="color: #ff0000">8</span></b></span
+                          >&nbsp;</b
+                        ></span
+                      ><span style="font-family: Nanum Gothic"
+                        ><b><span style="color: #ee2323"></span></b></span
+                      ><span style="font-family: Nanum Gothic"><b></b></span><span style="font-family: Nanum Gothic"><b></b></span><span style="font-family: Nanum Gothic"><b></b></span><span style="font-family: Nanum Gothic"><b></b></span><span style="font-family: Nanum Gothic"></span><span style="font-family: Nanum Gothic"></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <h4 data-ke-size="size20">
+                  <span style="font-family: 'Nanum Gothic'"><b>[Python]</b></span>
+                </h4>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>1. 파이썬 문제 ( 2020년 2회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631493821392"
+                  class="python"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="python"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-string">"a={'일본', '중국', '한국'}
+                a.add('베트남')
+                a.add('중국')
+                a.remove('일본')
+                a.update({'홍콩','한국','태국'})
+                print(a)"</span></code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-ke-type="moreLess" data-text-more="더보기" data-text-less="닫기">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.75; margin-top: 0px; margin-bottom: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><span style="margin-top: 0px; margin-bottom: 0px"
+                          ><b>답안 : <span style="color: #ee2323">{'중국', '한국', '베트남', '홍콩', '태국'}&nbsp;</span></b
+                          ><span style="color: #ee2323"><b>{'한국', '중국', '베트남', '홍콩', '태국'}</b>&nbsp;,&nbsp;<b>{'베트남', '중국', '한국', '홍콩', '태국'}, ... 등&nbsp;</b><b>(순서 상관없이 집합 요소만 포함)</b>&nbsp;</span></span
+                        ></span
+                      >
+                    </p>
+                    <p data-ke-size="size16">&nbsp;</p>
+                    <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">* 애매한 문제</span></p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>2. </b><b>다음의 출력 결과를 쓰시오. ( 2020년 4,5회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631494445626"
+                  class="python"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 15px; color: #383a42; background: #f6f7f8; font-size: 14px; border-radius: 3px; font-family: Menlo, Consolas, Monaco, monospace; border: 1px solid #dddddd; cursor: default; z-index: 1"
+                  data-ke-language="python"
+                  data-ke-type="codeblock"
+                ><code class="hljs">lol = [[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>], [<span class="hljs-number">4</span>,<span class="hljs-number">5</span>], [<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">9</span>]]
+                
+                print(lol[<span class="hljs-number">0</span>])
+                
+                print(lol[<span class="hljs-number">2</span>][<span class="hljs-number">1</span>])
+                
+                <span class="hljs-keyword">for</span> sub <span class="hljs-keyword">in</span> lol;
+                
+                <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> sub;
+                
+                print(item, end=<span class="hljs-string">""</span>)
+                
+                print()</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><b>문제 유형 :&nbsp;<span style="color: #006dd7">프로그래밍 ( 파이썬 )</span></b></b
+                          ></span
+                        >
+                      </p>
+                    </div>
+                    <p style="line-height: 1.75" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"><b>답안</b></span>
+                    </p>
+                    <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"
+                        ><b><span style="color: #ee2323">[1,2,3]</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"
+                        ><b><span style="color: #ee2323">7</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"
+                        ><b><span style="color: #ee2323">1 2 3</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"
+                        ><b><span style="color: #ee2323">4 5</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"
+                        ><b><span style="color: #ee2323">6 7 8 9</span></b></span
+                      ><span style="font-family: Nanum Gothic"
+                        ><b><span style="color: #ee2323"></span></b
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>3. 파이썬 문제 ( 부분점수 없음 ) ( 2021년 1회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631494664023"
+                  class="python"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 15px; color: #383a42; background: #f6f7f8; font-size: 14px; border-radius: 3px; font-family: Menlo, Consolas, Monaco, monospace; border: 1px solid #dddddd; cursor: default; z-index: 1"
+                  data-ke-language="python"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">arr</span>:</span>
+                    a = [<span class="hljs-string">"Seoul"</span>,<span class="hljs-string">"Kyeonggi"</span>,<span class="hljs-string">"Inchon"</span>,<span class="hljs-string">"Daejoen"</span>,<span class="hljs-string">"Deagu"</span>,<span class="hljs-string">"Pusan"</span>]
+                str01=<span class="hljs-string">' '</span>
+                <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> arr.a:
+                    str01 = str01 + i[<span class="hljs-number">0</span>]
+                print(str01)</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b
+                            ><span style="color: #333333"
+                              ><b
+                                ><span style="margin-top: 0px; color: #333333">답안 :<span>&nbsp;</span><span style="color: #ee2323">SKIDDP</span><span style="margin-top: 0px"></span></span></b></span></b
+                          ><b
+                            ><span style="color: #333333"
+                              ><b
+                                ><span style="color: #333333"><span style="color: #006dd7"></span></span></b></span></b
+                          ><span style="margin-top: 0px; color: #333333"
+                            ><b
+                              ><span style="margin-top: 0px"
+                                ><b
+                                  ><span style="margin-top: 0px"><span style="margin-top: 0px"></span></span></b></span></b></span
+                          ><b
+                            ><span style="color: #333333"
+                              ><b><span style="color: #333333"></span></b></span></b></span
+                        ><span style="font-family: 'Nanum Gothic'"><b></b><b></b><b></b></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <b><span style="font-family: Nanum Gothic">4. 파이썬 문제 ( 2021년 2회 )</span></b>
+                </p>
+                <pre
+                  id="code_1631494962715"
+                  class="python"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 20px; color: #383a42; background: #f8f8f8; font-size: 14px; font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace; border: 1px solid #ebebeb; line-height: 1.71; cursor: default; z-index: 1"
+                  data-ke-language="python"
+                  data-ke-type="codeblock"
+                ><code class="hljs">a = <span class="hljs-number">100</span>
+                result = <span class="hljs-number">0</span>
+                <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,<span class="hljs-number">3</span>):
+                        result = a &gt;&gt; i
+                        result = result +<span class="hljs-number">1</span>
+                print(result)</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"><b></b></span
+                      ><span style="font-family: Nanum Gothic"
+                        ><b
+                          ><b><span style="color: #006dd7"></span></b></b
+                        ><b>답안 :&nbsp;<span style="color: #ee2323">26</span></b></span
+                      ><span style="font-family: Nanum Gothic"
+                        ><b><span style="color: #ee2323"></span></b
+                      ></span>
+                    </p>
+                    <span style="color: #ee2323; font-family: 'Nanum Gothic'"></span>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <h4 data-ke-size="size20">
+                  <span style="font-family: 'Nanum Gothic'"><b>[SQL]</b></span>
+                </h4>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>1. 학생(Student) 테이블에 컴퓨터과 학생 50명, 인터넷과 학생 100명, 사무자동화과 학생 50명에 관한 데이터가 있다고 가정할 때 다음에 주어지는 SQL문을 각각 실행시키면 결과 튜플 수는 각각 몇 개인가?(단, DEPT는 학과 컬럼명임) ( 2020년 1회 )</b></span>
+                </p>
+                <pre
+                  id="code_1631493425663"
+                  class="sql"
+                  style="
+                    margin: 20px auto 0px;
+                    display: block;
+                    overflow: auto;
+                    padding: 15px;
+                    color: #383a42;
+                    background: #f6f7f8;
+                    font-size: 14px;
+                    border-radius: 3px;
+                    font-family: Menlo, Consolas, Monaco, monospace;
+                    border: 1px solid #dddddd;
+                    cursor: default;
+                    z-index: 1;
+                    font-style: normal;
+                    font-variant-ligatures: normal;
+                    font-variant-caps: normal;
+                    font-weight: 400;
+                    letter-spacing: normal;
+                    orphans: 2;
+                    text-align: start;
+                    text-indent: 0px;
+                    text-transform: none;
+                    widows: 2;
+                    word-spacing: 0px;
+                    -webkit-text-stroke-width: 0px;
+                    text-decoration-style: initial;
+                    text-decoration-color: initial;
+                  "
+                  data-ke-language="sql"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-keyword">SELECT</span> DEPT <span class="hljs-keyword">FROM</span> STUDENT;
+                <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">DISTINCT</span> DEPT <span class="hljs-keyword">FROM</span> STUDENT;
+                <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(<span class="hljs-keyword">DISTINCT</span> DEPT) <span class="hljs-keyword">FROM</span> STUDENT <span class="hljs-keyword">WHERE</span> DEPT = <span class="hljs-string">'컴퓨터과'</span></code></pre>
+                <div
+                  style="
+                    margin: 20px 0px;
+                    caret-color: auto;
+                    background-color: #fafafa;
+                    padding: 20px 20px 22px;
+                    border: 1px dashed #dddddd;
+                    color: #333333;
+                    font-family: -apple-system, BlinkMacSystemFont, AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-variant-ligatures: normal;
+                    font-variant-caps: normal;
+                    font-weight: 400;
+                    letter-spacing: normal;
+                    orphans: 2;
+                    text-align: start;
+                    text-indent: 0px;
+                    text-transform: none;
+                    white-space: normal;
+                    widows: 2;
+                    word-spacing: 0px;
+                    -webkit-text-stroke-width: 0px;
+                    text-decoration-thickness: initial;
+                    text-decoration-style: initial;
+                    text-decoration-color: initial;
+                  "
+                  data-ke-type="moreLess"
+                  data-text-more="더보기"
+                  data-text-less="닫기"
+                >
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.75; margin-top: 0px; margin-bottom: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b
+                          ><span style="margin-top: 0px; margin-bottom: 0px">답안 : <span style="color: #ee2323">200, 3, 1</span></span></b
+                        ><b></b
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>2. SQL SELECT 작성 ( in 사용 )&nbsp; ( 2020년 2회 )</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>- 학번, 이름을 학생 테이블에서 3, 4학년인 학생을 검색</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>- IN 함수 사용</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-ke-type="moreLess" data-text-more="더보기" data-text-less="닫기">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.75; margin-top: 0px; margin-bottom: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b
+                          ><span style="margin-top: 0px; margin-bottom: 0px">답안 :&nbsp;<span style="margin-top: 0px; margin-bottom: 0px; color: #ee2323">SELECT 학번, 이름 FROM 학생 WHERE 학년 IN(3,4);</span></span></b
+                        ><b><span style="color: #ee2323"></span></b
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>3. SQL 인덱스 작성 - student 테이블의 name 속성에 idx_name 이름의 인덱스 생성 ( 2020년 2회 )</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-ke-type="moreLess" data-text-more="더보기" data-text-less="닫기">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.75; margin-top: 0px; margin-bottom: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b
+                          ><span
+                            style="margin-top: 0px; margin-bottom: 0px"
+                            data-sheets-value='{"1":2,"2":"student 테이블의 name 속성에 idx_name 이름으로 인덱스 생성"}'
+                            data-sheets-userformat='{"2":13245,"3":{"1":0},"5":{"1":[{"1":2,"2":0,"5":{"1":2,"2":0}},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"6":{"1":[{"1":2,"2":0,"5":{"1":2,"2":0}},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"7":{"1":[{"1":2,"2":0,"5":{"1":2,"2":0}},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"8":{"1":[{"1":2,"2":0,"5":{"1":2,"2":0}},{"1":0,"2":0,"3":2},{"1":1,"2":0,"4":1}]},"10":1,"11":4,"12":0,"15":"Comic Sans MS","16":11}'
+                            >답안 :&nbsp;<span style="margin-top: 0px; margin-bottom: 0px; color: #ee2323">CREATE INDEX idx_name ON student(name);</span></span
+                          ></b
+                        ><b><span style="color: #ee2323"></span></b
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>4. 다음 학생 테이블에서 이름이 민수인 튜플을 삭제하도록 결과를 작성하시오. ( 2020년 3회 )</b></span>
+                </p>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- 대,소문자는 구분하지 않습니다.</span></p>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- 세미콜론(;)은 생략가능합니다.</span></p>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- 속성명에 작은 따옴표(' ')를 사용합니다.</span></p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px; margin-bottom: 0px">
+                      <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><span style="margin-top: 0px; margin-bottom: 0px"
+                            ><b
+                              ><span style="margin-top: 0px; margin-bottom: 0px; color: #333333">답안 :&nbsp;<span style="margin-top: 0px; margin-bottom: 0px; color: #ee2323">DELETE FROM 학생 WHERE 이름 = '민수'</span></span></b
+                            ></span
+                          ><b></b
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>5. 다음 성적 테이블에서 평균이 90이상인 과목 이름과 최소점수, 최대점수의 결과를 작성하시오. ( 2020년 3회 )</b></span>
+                </p>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">[성적]</span></p>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- 3가지의 과목이름이 주어짐 ( 행도 여러 개 )</span></p>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- .으로 표시된 것은 빈 값이 아닌 정확한 값이 기억이 나지 않아 .으로 표시한 것</span></p>
+                <table style="border-collapse: collapse; width: 100%" border="1" data-ke-align="alignLeft">
+                  <tbody>
+                    <tr>
+                      <td style="width: 25%"><span style="font-family: 'Nanum Gothic'">과목코드</span></td>
+                      <td style="width: 25%"><span style="font-family: 'Nanum Gothic'">과목이름</span></td>
+                      <td style="width: 12.5%"><span style="font-family: 'Nanum Gothic'">학점</span></td>
+                      <td style="width: 12.5%"><span style="font-family: 'Nanum Gothic'">점수</span></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 25%"><span style="font-family: 'Nanum Gothic'">.</span></td>
+                      <td style="width: 25%"><span style="font-family: 'Nanum Gothic'">컴퓨터과학</span></td>
+                      <td style="width: 12.5%"><span style="font-family: 'Nanum Gothic'">.</span></td>
+                      <td style="width: 12.5%"><span style="font-family: 'Nanum Gothic'">.</span></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 25%"><span style="font-family: 'Nanum Gothic'">.</span></td>
+                      <td style="width: 25%"><span style="font-family: 'Nanum Gothic'">운영체제</span></td>
+                      <td style="width: 12.5%"><span style="font-family: 'Nanum Gothic'">.</span></td>
+                      <td style="width: 12.5%"><span style="font-family: 'Nanum Gothic'">.</span></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 25%"><span style="font-family: 'Nanum Gothic'">.</span></td>
+                      <td style="width: 25%"><span style="font-family: 'Nanum Gothic'">.</span></td>
+                      <td style="width: 12.5%"><span style="font-family: 'Nanum Gothic'">.</span></td>
+                      <td style="width: 12.5%"><span style="font-family: 'Nanum Gothic'">.</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">[결과] - 숫자는 정확하지 않음</span></p>
+                <table style="border-collapse: collapse; width: 100%" border="1" data-ke-align="alignLeft">
+                  <tbody>
+                    <tr>
+                      <td style="width: 33.3333%"><span style="font-family: 'Nanum Gothic'">과목이름</span></td>
+                      <td style="width: 33.3333%"><span style="font-family: 'Nanum Gothic'">최소점수</span></td>
+                      <td style="width: 33.3333%"><span style="font-family: 'Nanum Gothic'">최대점수</span></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 33.3333%"><span style="font-family: 'Nanum Gothic'">컴퓨터과학</span></td>
+                      <td style="width: 33.3333%"><span style="font-family: 'Nanum Gothic'">83</span></td>
+                      <td style="width: 33.3333%"><span style="font-family: 'Nanum Gothic'">95</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- 대,소문자는 구분하지 않습니다.</span></p>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- WHERE 구문은 사용하지 않습니다.</span></p>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- GROUP BY, HAVING 구문은 필수로 사용해야합니다.</span></p>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- 세미콜론(;)은 생략가능합니다.</span></p>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- 별칭 ( AS ) 을 사용해야합니다.</span></p>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- 속성명에 작은 따옴표(' ')를 사용합니다.</span></p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px; margin-bottom: 0px">
+                      <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; margin-bottom: 0px; font-family: 'Nanum Gothic'"
+                          ><b><span style="margin-top: 0px; margin-bottom: 0px; color: #333333">답안</span></b
+                          ><b><span style="margin-top: 0px; margin-bottom: 0px; color: #333333"></span></b
+                        ></span>
+                      </p>
+                      <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><span style="margin-top: 0px; margin-bottom: 0px"
+                            ><b
+                              ><span style="margin-top: 0px; margin-bottom: 0px; color: #333333"><span style="margin-top: 0px; margin-bottom: 0px; color: #ee2323">SELECT 과목이름, MIN(점수) AS 최소점수, MAX(점수) AS 최대점수 FROM 성적 GROUP BY 과목이름 HAVING AVG(점수) &gt;= 90</span></span></b
+                            ></span
+                          ><b></b
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <b><span style="font-family: 'Nanum Gothic'">6. 다음 속성을 주소라고 하고 크기는 20으로 제한한다. 학생 테이블에 컬럼을 추가하는 결과를 작성하시오. ( 2020년 3회 )</span></b>
+                </p>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">(&nbsp; ①&nbsp; ) TABLE 학생 (&nbsp; ②&nbsp; ) 주소 VARCHAR(20);</span></p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #dddddd; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px; margin-bottom: 0px">
+                      <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; margin-bottom: 0px; font-family: 'Nanum Gothic'"
+                          ><b
+                            ><span style="margin-top: 0px; margin-bottom: 0px; color: #333333">답안 :&nbsp;<span style="margin-top: 0px; margin-bottom: 0px; color: #ee2323">① ALTER&nbsp; ② ADD</span></span></b
+                          ></span
+                        ><span style="font-family: Nanum Gothic"><b></b></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>7. SQL: where 쓰지말 것, group by 쓸 것, 집계함수 사용할 것, AS(alias)사용할 것, 세미콜론(;) 생략 가능, 인용 필요시 ' 사용</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>( 2020년 4, 5회 )</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>- 결과 테이블:</b></span
+                  ><br /><span style="font-family: 'Nanum Gothic'"><b>학과 학과별튜플수</b></span
+                  ><br /><span style="font-family: 'Nanum Gothic'"><b>전기&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;1</b></span
+                  ><br /><span style="font-family: 'Nanum Gothic'"><b>컴퓨터&nbsp;&nbsp; 2</b></span
+                  ><br /><span style="font-family: 'Nanum Gothic'"><b>전자&nbsp;&nbsp;&nbsp;&nbsp; 2</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><span style="color: #333333"><span style="color: #333333">답안</span></span></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><span style="color: #333333"
+                              ><span style="color: #333333">-&nbsp;<span style="color: #ee2323">SELECT 학과, COUNT(학과) AS '학과별튜플수' FROM 학생 GROUP BY 학과</span></span></span
+                            ></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><span style="color: #333333"
+                              ><span style="color: #333333"><span style="color: #ee2323">또는</span></span></span
+                            ></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b
+                            ><span style="color: #333333"
+                              ><span style="color: #333333"><span style="color: #ee2323">- SELECT 학과, COUNT(*) AS '학과별튜플수' FROM 학생 GROUP BY 학과;</span></span></span
+                            ></b
+                          ><b
+                            ><span style="color: #333333"
+                              ><span style="color: #333333"><span style="color: #ee2323"></span></span></span></b></span
+                        ><span style="font-family: 'Nanum Gothic'"><b></b><b></b></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"
+                    ><b>8.<span>&nbsp;</span>SQL 문제<b> ( 부분점수 없음 ) ( 2021년 1회 )</b></b></span
+                  >
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"
+                    ><b>SELECT COUNT(*)<span>&nbsp;</span></b
+                    ><b>FROM [TABLE]</b><b><span>&nbsp;</span>WHERE EMPNO &gt; 100 AND SAL &gt;= 3000 OR ENPNO = 200</b><b>[TABLE]</b></span
+                  >
+                </p>
+                <table style="border-collapse: collapse; width: 100%" border="1" data-ke-align="alignLeft">
+                  <tbody>
+                    <tr>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>EMPNO</b></span>
+                      </td>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>SAL</b></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>100</b></span>
+                      </td>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>1000</b></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>200</b></span>
+                      </td>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>3000</b></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>300</b></span>
+                      </td>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>1500</b></span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <b
+                        >답안 :
+                        <b
+                          ><span
+                            ><b
+                              ><span><span style="color: #ee2323">1 [테이블 그린 상태로] OR 1</span></span></b
+                            ></span
+                          ></b
+                        ></b
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>9. [변형문제]<span>&nbsp;</span>다음 테이블의 카디널리티와&nbsp;차수의&nbsp;갯수를 구하시오. (단, 학번, 학년은 숫자형, 이름과 학과는 문자형이다)</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>( 2021년 1회 )</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>student테이블</b></span>
+                </p>
+                <table style="border-collapse: collapse; width: 100%; height: 120px" border="1" data-ke-style="style8" data-ke-align="alignLeft">
+                  <tbody>
+                    <tr style="height: 20px">
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">학번</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">이름</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">학과</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">학년</span></td>
+                    </tr>
+                    <tr style="height: 20px">
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">20191001</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">강은미</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">컴퓨터학과</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">2</span></td>
+                    </tr>
+                    <tr style="height: 20px">
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">20192002</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">김정미</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">정보통신학과</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">2</span></td>
+                    </tr>
+                    <tr style="height: 20px">
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">20183003</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">홍길동</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">정보보호학과</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">3</span></td>
+                    </tr>
+                    <tr style="height: 20px">
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">20201002</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">김철수</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">정보보호학과</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">2</span></td>
+                    </tr>
+                    <tr style="height: 20px">
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">20211003</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">김영희</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">정보통신학과</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">3</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"
+                    ><b>-<span>&nbsp;</span><b>카디널리티&nbsp;</b>: (&nbsp; ①&nbsp; )&nbsp;</b></span
+                  >
+                </p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"
+                    ><b>-<span>&nbsp;</span><b>차수</b><span>&nbsp;</span>: (&nbsp; ②&nbsp; )</b></span
+                  >
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b></b><b><span style="color: #006dd7"></span></b><b>답안 :</b><b>&nbsp;<span style="color: #ee2323"></span></b
+                          ><span style="color: #333333"
+                            ><b><span style="color: #ee2323">① 5 ② 4</span></b></span
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'; color: #333333"
+                          ><b><b>해설</b></b></span
+                        >
+                      </p>
+                      <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16"><span style="font-family: 'Nanum Gothic'; color: #333333">- 카디널리티(cardinality) : 하나의 릴레이션에서 투플(행)의 전체 개수를 릴레이션의 카디널리티라고 한다.</span></p>
+                      <p style="line-height: 1.75; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'; color: #333333"><span style="color: #333333">-&nbsp;차수(degree) : 하나의 릴레이션에 속성(열)의 전체 개수를 릴레이션의 차수라고 한다.</span></span
+                        ><span style="font-family: 'Nanum Gothic'; color: #333333"></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <b><span style="font-family: Nanum Gothic">1</span><span style="font-family: Nanum Gothic">0. SQL 문제 ( 부분점수 있음 ) ( 2021년 2회 )</span></b>
+                </p>
+                <p data-ke-size="size16"><span style="font-family: Nanum Gothic">- 튜플을 수정하는 문제</span></p>
+                <p data-ke-size="size16">
+                  <b><span style="font-family: 'Nanum Gothic'">(&nbsp; &nbsp; &nbsp;1&nbsp; &nbsp;) 테이블명 (&nbsp; &nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp;) 컬럼=값 WHERE 점수 &gt;= 90;</span></b>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><span style="color: #333333"
+                              ><b><span style="margin-top: 0px; color: #333333">답안</span></b></span
+                            ></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><span style="color: #333333"
+                              ><b
+                                ><span style="margin-top: 0px; color: #333333"><span style="color: #ee2323">(1) UPDATE</span></span></b
+                              ></span
+                            ></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><span style="color: #333333"
+                              ><b
+                                ><span style="margin-top: 0px; color: #333333"><span style="color: #ee2323">(2) SET</span></span></b
+                              ></span
+                            ></b
+                          ></span
+                        ><span style="font-family: Nanum Gothic"><b></b></span><span style="font-family: Nanum Gothic"><b></b></span
+                        ><span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"
+                          ><b
+                            ><span style="margin-top: 0px"
+                              ><b><span style="margin-top: 0px"></span></b></span></b></span
+                        ><span style="font-family: Nanum Gothic"><b></b></span><span style="font-family: Nanum Gothic"><b></b></span><span style="font-family: Nanum Gothic"></span><span style="font-family: Nanum Gothic"></span
+                        ><span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"
+                          ><b
+                            ><span style="margin-top: 0px"><b></b></span></b></span
+                        ><span style="font-family: Nanum Gothic"></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <b><span style="font-family: 'Nanum Gothic'">11. SQL 문제 ( 부분점수 있음 ) ( 2021년 2회 )</span></b
+                  ><span style="font-family: 'Nanum Gothic'"></span>
+                </p>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- JOIN 문제</span></p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>SELECT ... FROM 학생정보 a JOIN 학과정보 b (&nbsp; &nbsp; 1&nbsp; &nbsp; ) a.학과 = b.(&nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp;)</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"><b>답안</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><b
+                              ><span style="color: #333333"
+                                ><b
+                                  ><span style="color: #333333"><span style="color: #ee2323">(1) ON</span></span></b
+                                ></span
+                              ></b
+                            ></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><b
+                              ><span style="color: #333333"
+                                ><b
+                                  ><span style="color: #333333"><span style="color: #ee2323">(2) 학과</span></span></b
+                                ></span
+                              ></b
+                            ></b
+                          ></span
+                        ><span style="font-family: Nanum Gothic"
+                          ><b><b></b></b></span
+                        ><span style="font-family: Nanum Gothic"><b></b></span
+                        ><span style="font-family: Nanum Gothic"
+                          ><b><b></b></b></span
+                        ><span style="font-family: Nanum Gothic"></span
+                        ><span style="font-family: Nanum Gothic"
+                          ><b><b></b></b></span
+                        ><span style="font-family: Nanum Gothic"><b></b></span><span style="font-family: Nanum Gothic"></span><span style="font-family: Nanum Gothic"><b></b></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <b><span style="font-family: 'Nanum Gothic'">12. SQL 문제 ( 부분점수 있음 ) ( 2021년 2회 )</span></b>
+                </p>
+                <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- 이씨 내림차순 문제</span></p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>SELECT ... FROM ... WHERE 이름 LIKE (&nbsp; &nbsp; 1&nbsp; &nbsp; ) ORDER&nbsp; BY (&nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp;)</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"><b>답안</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><b
+                              ><span style="color: #333333"
+                                ><b
+                                  ><span style="color: #333333"><span style="color: #ee2323">(1) 이%</span></span></b
+                                ></span
+                              ></b
+                            ></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><b
+                              ><span style="color: #333333"
+                                ><b
+                                  ><span style="color: #333333"><span style="color: #ee2323">(2) DESC</span></span></b
+                                ></span
+                              ></b
+                            ></b
+                          ></span
+                        ><span style="font-family: Nanum Gothic"
+                          ><b><b></b></b
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+              </div>
+            </div>
+
+            <!-- </div> -->
+            <textarea class="answer" onkeydown="resize(this)" onkeyup="resize(this)" cols="90" rows="1"></textarea>
+          </article>
+          <aside id="aside" class="sidebar" style="height: auto !important"></aside>
+        </div>
+      </section>
+    </div>
+    <script>
+      function resize(obj) {
+        obj.style.height = "1px";
+        obj.style.height = 5 + obj.scrollHeight + "px";
+      }
+    </script>
+  </body>
+</html>

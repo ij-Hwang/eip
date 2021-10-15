@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" type="text/css" href="CSS/lightbox.min.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/font.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/content.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+
+    <script src="JS/jquery-3.2.1.min.js"></script>
+    <script src="JS/lightbox-plus-jquery.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script>
+      lightbox.options.fadeDuration = 200;
+      lightbox.options.resizeDuration = 200;
+      lightbox.options.wrapAround = false;
+      lightbox.options.albumLabel = "%1 / %2";
+    </script>
+    <script>
+      var tjQuery = jQuery.noConflict(true);
+    </script>
+    <style type="text/css">
+      .tt_article_useless_p_margin p {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+    </style>
+
+    <style type="text/css">
+      #DragSchLayer {
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        width: 61px;
+        height: 31px;
+        margin: -30px 0px 0px -5px;
+        background: url(//search1.daumcdn.net/search/statics/common/pi/btn_drag_rect.png);
+        cursor: pointer;
+      }
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+        #DragSchLayer {
+          background-image: url(//search1.daumcdn.net/search/statics/common/pi/r2/btn_drag_rect.png);
+          background-size: 61px 31px;
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>ExampleT</title>
+  </head>
+
+  <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" id="tt-body-page" class="layout-aside-right list-type-text paging-number" aria-hidden="false">
+    <script type="text/javascript" src="JS/base.js"></script>
+
+    <div id="wrap" style="height: auto !important">
+      <header id="header">
+        <div class="inner">
+          <h1>
+            <a class="subTitle">2021_1회</a>
+          </h1>
+          <nav id="gnb"></nav>
+        </div>
+      </header>
+      <section id="container" style="height: auto !important">
+        <div class="content-wrap" style="height: auto !important">
+          <article id="content" style="height: auto !important">
+            <!-- <div class="inner"> -->
+            <div class="entry-content">
+              <div class="tt_article_useless_p_margin contents_style" style="height: auto !important">
+                <p data-ke-size="size16"><span style="color: #333333; font-family: 'Nanum Gothic'">* 공단에서 실기 문제와 답은 공개하지 않습니다. 포스팅한 자료는 응시하신 분들의 기억으로 복원된 문제와 가답안이므로 실제 문제 순서나 정답과 다를 수 있습니다.</span></p>
+                <p data-ke-size="size16"><span style="color: #333333; font-family: 'Nanum Gothic'">* 답안을 바탕으로 변형된 문제도 수록되어 있습니다.</span></p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"
+                    ><span style="color: #333333">*&nbsp;</span><span style="color: #333333"></span><a href="https://cafe.naver.com/soojebi">https://cafe.naver.com/soojebi</a><span style="color: #333333">와,&nbsp;</span><span style="color: #333333"></span><a href="http://www.gisafirst.com/">http://www.gisafirst.com/</a><span style="color: #333333">을 참고로 작성되었습니다.</span></span
+                  >
+                </p>
+                <p data-ke-size="size16"><span style="color: #333333; font-family: 'Nanum Gothic'">* 본 포스팅을 무단 복제하거나 배포하지 마시기 바랍니다. ( 게시글 최상단에 본 블로그 출처 밝히시면 포스팅 가능합니다. )</span></p>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"
+                    ><b
+                      >1. <span style="color: #333333">물리주소(MAC 주소)로 IP주소를 찾는 프로토콜을 작성하시오. <b>&nbsp;( 부분점수 없음 )</b></span></b
+                    ></span
+                  >
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess" class="">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic; color: #006dd7"
+                        ><b><span style="color: #333333">문제 유형 :</span>&nbsp;단답형</b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"
+                        ><b
+                          ><span style="color: #333333"
+                            >답안 :<span style="color: #ee2323"> <b>RARP</b></span></span
+                          ></b
+                        ></span
+                      >
+                    </p>
+                    <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">&nbsp;</p>
+                    <span style="font-family: 'Nanum Gothic'"
+                      ><b>해설</b
+                      ><b
+                        ><span style="color: #000000">1. ARP(Address Resolution Protocol) : 네트워크계층</span><span style="color: #333333"><br /></span><span style="color: #333333">-</span><span style="color: #000000">&nbsp;IP Address를 물리적 네트워크 주소로 변환시켜주는 프로토콜</span><span style="color: #333333"><br /></span><span style="color: #333333">-&nbsp;</span
+                        ><span style="color: #000000">IP Address가 중복되어 사용되는지 찾을 수 있음</span><span style="color: #333333"><br /></span><span style="color: #333333">- IP 주소를 MAC(Media Access Control) 주소로 대응시키기 위한 프로토콜<br /></span><span style="color: #333333">- ARP Caches는 일정시간이 지나면 사라짐<br /></span
+                        ><span style="color: #333333">- IP 데이터그램을 정확한 목적지 호스트로 보내기 위해 IP에 의해 보조적으로 사용되는 프로토콜<br /></span><span style="color: #333333">- 스스로 수정 가능<br /></span><span style="color: #333333"><br /></span><span style="color: #000000">2. RARP(Reverse Address Resolution Protocol) : 네트워크계층</span><span style="color: #333333"><br /></span
+                        ><span style="color: #333333">-&nbsp;</span><span style="color: #000000">하드웨어 주소를 IP Address로 변환시켜주는 프로토콜</span><span style="color: #333333"><br /></span><span style="color: #333333">- RFC 951에 기술된 BOOTP에 의해 대체되고 있음<br /></span><span style="color: #333333">- RFC 903에 명시<br /></span><span style="color: #333333">-&nbsp;</span
+                        ><span style="color: #000000">로컬 디스크가 없는 네트워크상에 연결된 시스템에 사용</span><span style="color: #333333"><br /></span><span style="color: #333333">- DHCP나 BOOTP처럼 IP를 자동으로 할당하지 않고 이미 다른 PC에 할당 된 IP를 MAC주소만 가지고 알아옴</span></b
+                      ></span
+                    >
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>2. [ 보기 ] 구현 / 개념적 설계 / 논리적 설계 / 요구사항 / 물리적 설계</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>보기를 토대로 (1) ~ (3)에 알맞은 답안을 쓰시오.</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"
+                    ><b><span style="color: #333333">(1) ~ 결과로 테이블 정의서, 명세서 등이 있음</span></b></span
+                  >
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>(2) 결과로 E-R 다이어그램이 나옴</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>(3) 과정에서 정규화 과정 수행함</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess" class="open">
+                  <a class="btn-toggle-moreless">닫기</a>
+                  <div class="moreless-content">
+                    <p data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b>문제 유형 :&nbsp;<span style="color: #006dd7">단답형</span></b></span
+                      >
+                    </p>
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><span style="color: #333333">답안 :<span style="margin-top: 0px; color: #ee2323"> (1) 물리적 설계(물리) , (2) 개념적 설계(개념), (3) 논리적 설계(논리)</span></span></b
+                          ></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>3. 웹 서비스명, 제공 위치, 메시지 포맷, 프로토콜 정보 등 웹 서비스에 대한 상세 정보가 기술된 XML 형식으로 구현되어 있는 언어는 무엇인가?</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess" class="open">
+                  <a class="btn-toggle-moreless">닫기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><span style="color: #333333"
+                              ><span style="color: #333333">문제 유형 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #006dd7">단답형</span></span></span
+                            ></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b
+                            ><span style="color: #333333">답안 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #ee2323">WSDL</span></span></b
+                          ><b
+                            ><span style="color: #333333"><span style="color: #ee2323"></span></span></b
+                        ></span>
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><span style="margin-top: 0px; color: #333333"
+                            ><b
+                              ><span style="margin-top: 0px"
+                                ><span style="margin-top: 0px">참고 : <a href="https://ss-o.tistory.com/106" target="_blank" rel="noopener">ss-o.tistory.com/106</a> - 2020년 3회 예상 모의고사 40제 1번 문제</span></span
+                              ></b
+                            ></span
+                          ><span style="margin-top: 0px; color: #333333"
+                            ><b
+                              ><span style="margin-top: 0px"><span style="margin-top: 0px"></span></span></b></span
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>4. 다음 (1), (2)에 알맞은 답안을 쓰시오.</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>(1) (&nbsp; &nbsp; ) 요구사항은 시스템이 제공하는 기능 또는 서비스에 대해 상세하게 기술된 요구사항이다.</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>(2) (&nbsp; &nbsp; ) 요구사항은 시스템 속성이나 시스템에 의해 제공되는 서비스나 기능에 대한 제약사항에 대해 기술되어 있다.</b></span>
+                </p>
+                <p data-ke-size="size16">&nbsp;</p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess" class="">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b>문제 유형 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #006dd7">단답형</span></b></span
+                        >
+                      </p>
+                    </div>
+                    <p style="line-height: 1.6" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"
+                        ><b>답안 :<span style="margin-top: 0px"> </span><span style="color: #ee2323">(1) 기능(적), (2) 비기능(적)</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.6" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b><span style="color: #333333">해설</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.6" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b><span style="color: #333333">* 요구사항</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.6" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b><span style="color: #333333">- 소프트웨어가 어떤 문제를 해결하기 위해 제공하는 서비스에 대한 설명과 정상적으로 운영되는데 필요한 제약조건</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.6" data-ke-size="size16">&nbsp;</p>
+                    <p style="line-height: 1.6" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b><span style="color: #333333">* 요구사항 개발 프로세스</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.6" data-ke-size="size16">
+                      <span style="color: #ee2323; font-family: 'Nanum Gothic'"><b>- 도출 &gt; 분석 &gt; 명세 &gt; 확인</b></span>
+                    </p>
+                    <p style="line-height: 1.6" data-ke-size="size16">&nbsp;</p>
+                    <p id="SE-61b91b5c-ec1a-4f33-94f6-866b6cb57bc4" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"><b>- 도출(요구사항 수집 단계)</b></span>
+                    </p>
+                    <p id="SE-14456041-cf11-423e-90eb-0001b62f24cb" data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">: 이해관계자 간의 의사소통 중요 ( 인터뷰, 브레인스토밍, 프로토타이핑, 유스케이스 )</span></p>
+                    <p id="SE-9b9a8455-d294-4b01-9567-c74fae63401a" data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">&ZeroWidthSpace;</span></p>
+                    <p id="SE-fdf9c4e9-0ca1-4540-92bc-c50b4b44183d" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"><b>- 분석(요구사항 분석 단계)</b></span>
+                    </p>
+                    <p id="SE-8142505e-1409-4c59-850f-fa4d1fffaf69" data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">: 도출된 요구사항의 타당성 조사, 내용 정리 ( 중복 제거, 요구사항 통합 )</span></p>
+                    <p id="SE-0f32e3e2-f9d9-4f2f-b51b-41fc86cae16a" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        >&gt;&gt;<b>&nbsp;<span style="color: #ee2323">요구사항 분류</span>&nbsp;</b>: 특정한 기준으로 분류 ( 기능, 비기능 우선순위 )</span
+                      >
+                    </p>
+                    <p id="SE-96dd491e-e1ba-4a36-bd92-b82c2d4aa0ff" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'">-&nbsp;<b>개념 모델링</b>&nbsp;: 분류된 요구사항 단순화하여 개념적으로 표현, UML 사용</span>
+                    </p>
+                    <p id="SE-033b2856-eb8e-49f5-9dde-cbaccf9025dd" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'">-&nbsp;<b>요구사항 할당</b>&nbsp;: 요구사항을 만족시키기 위한 요소들을 할당</span>
+                    </p>
+                    <p id="SE-cc127b07-c81f-4664-93c0-f42434718934" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'">-&nbsp;<b>요구사항 협상</b>&nbsp;: 충될되는 요구사항 해결</span>
+                    </p>
+                    <p id="SE-d0c17395-61fa-41e1-8844-dc6077eaed4e" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'">-&nbsp;<b>정형 분석</b>&nbsp;: 구문과 의미를 갖는 언어 이용, 수학적 기호</span>
+                    </p>
+                    <p id="SE-8701b91b-8bc1-465f-b2e7-9ca30870ca60" data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">&ZeroWidthSpace;</span></p>
+                    <p id="SE-42d2ee75-b871-4cca-80d5-84660e444294" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"><b>- 명세 (요구사항 문서화 단계)</b></span>
+                    </p>
+                    <p id="SE-82912b64-0c31-4a20-9351-ea1d0eabeb4a" data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">: 승인을 위해 문서화 진행, 빠짐없이 명확하고 이해하기 쉽게 기록</span></p>
+                    <p id="SE-55175573-803f-4e5f-8ee9-19173e3c39c8" data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">&ZeroWidthSpace;</span></p>
+                    <p id="SE-acc2edde-75fd-4c9b-ac82-28b211540be5" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"><b>- 확인(요구사항 검증 단계)</b></span>
+                    </p>
+                    <p id="SE-ba762814-61f9-4870-a683-21e6a7ac25f3" data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">: 명세서 검증, 형상관리 수행</span></p>
+                    <p id="SE-76a0e212-27b6-4588-8800-f29702b92629" data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">&gt;&gt; 요구사항 검토 : 가장 일반적, 훑어보기</span></p>
+                    <p id="SE-c5167620-d67e-4851-b595-a4849c1d4fb3" data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">&gt;&gt; 프로토타이핑 : 프로토타입을 만든 후 요구사항 반영하면서 지속적으로 프로토타입 재작성</span></p>
+                    <p id="SE-28f5173f-e260-47f2-8f9f-ad4213540439" data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">&gt;&gt; 모델 검증 : 요구사항 분석 단계에서 개발된 모델이 요구사항을 충족시키는지 검증</span></p>
+                    <p id="SE-484d6090-668a-47ad-a886-4bd14382eae5" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        >&gt;&gt;<b>&nbsp;<span style="color: #ee2323">인수 테스트</span></b
+                        >&nbsp;: 사용자가 실제로 사용될 환경에서 요구사항들이 모두 충족되는지 사용자 입장에서 확인하는 과정</span
+                      >
+                    </p>
+                    <p id="SE-8d7023e3-b123-4449-bbb7-58e289b4f2ba" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b>-&nbsp;<span style="color: #ee2323">알파 테스트</span>&nbsp;: 선별된 사용자가 개발자와 함께 검사 ( 통제된 환경 )</b></span
+                      >
+                    </p>
+                    <p id="SE-f25b31ff-70c5-4520-8d1b-2f780afa7380" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b>-<span style="color: #ee2323">&nbsp;베타 테스트</span>&nbsp;: 선별된 사용자가 여러 사용자를 통해 검사 ( 통제되지 않은 환경 )</b></span
+                      >
+                    </p>
+                    <p data-ke-size="size16">&nbsp;</p>
+                    <p data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"><b>* 참고</b></span>
+                    </p>
+                    <p data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"><b>- 사용자 요구사항 ( User requirements )</b></span>
+                    </p>
+                    <p data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"><b>사용자 관점에서 본 시스템이 제공해야할 요구사항</b></span>
+                    </p>
+                    <p data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"><b>사용자를 위해 친숙한 표현으로 쉽게 작성한다.</b></span>
+                    </p>
+                    <p data-ke-size="size16">&nbsp;</p>
+                    <p data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"><b>- 시스템 요구사항 ( System requirements )</b></span>
+                    </p>
+                    <p data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"><b>= 소프트웨어 요구사항</b></span>
+                    </p>
+                    <p data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"><b>개발자 관점에서 본 시스템 전체가 사용자와 다른 시스템에 제공해야 할 요구사항</b></span>
+                    </p>
+                    <p data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"><b>사용자 요구사항에 비해 전문적, 기술적 용어로 표현된다.</b></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>5. 파이썬 문제 ( 부분점수 없음 )</b></span>
+                </p>
+                <pre
+                  id="code_1620636491034"
+                  class="python"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 15px; color: #383a42; background: #f6f7f8; font-size: 14px; border-radius: 3px; font-family: Menlo, Consolas, Monaco, monospace; border: 1px solid #dddddd; cursor: default; z-index: 1"
+                  data-ke-language="python"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">arr</span>:</span>
+                    a = [<span class="hljs-string">"Seoul"</span>,<span class="hljs-string">"Kyeonggi"</span>,<span class="hljs-string">"Inchon"</span>,<span class="hljs-string">"Daejoen"</span>,<span class="hljs-string">"Deagu"</span>,<span class="hljs-string">"Pusan"</span>]
+                str01=<span class="hljs-string">' '</span>
+                <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> arr.a:
+                    str01 = str01 + i[<span class="hljs-number">0</span>]
+                print(str01)</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess" class="">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><span style="color: #333333"
+                              ><b
+                                ><span style="color: #333333">문제 유형 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #006dd7">프로그래밍 ( Python )</span></span></b
+                              ></span
+                            ></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b
+                            ><span style="color: #333333"
+                              ><b
+                                ><span style="margin-top: 0px; color: #333333">답안 : <span style="color: #ee2323">SKIDDP</span><span style="margin-top: 0px"></span></span></b></span></b
+                          ><b
+                            ><span style="color: #333333"
+                              ><b
+                                ><span style="color: #333333"><span style="color: #006dd7"></span></span></b></span></b
+                          ><span style="margin-top: 0px; color: #333333"
+                            ><b
+                              ><span style="margin-top: 0px"
+                                ><b
+                                  ><span style="margin-top: 0px"><span style="margin-top: 0px"></span></span></b></span></b></span
+                          ><b
+                            ><span style="color: #333333"
+                              ><b><span style="color: #333333"></span></b></span></b
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"
+                    ><b>6. SQL 문제<b>&nbsp;( 부분점수 없음 )</b></b></span
+                  >
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>SELECT COUNT(*) </b><b>FROM [TABLE]</b><b> WHERE EMPNO &gt; 100 AND SAL &gt;= 3000 OR ENPNO = 200</b><b>[TABLE]</b></span>
+                </p>
+                <table style="border-collapse: collapse; width: 100%" border="1" data-ke-align="alignLeft">
+                  <tbody>
+                    <tr>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>EMPNO</b></span>
+                      </td>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>SAL</b></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>100</b></span>
+                      </td>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>1000</b></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>200</b></span>
+                      </td>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>3000</b></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>300</b></span>
+                      </td>
+                      <td style="width: 50%">
+                        <span style="font-family: 'Nanum Gothic'"><b>1500</b></span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess" class="">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b
+                          ><span style="margin-top: 0px; caret-color: auto; letter-spacing: 0px"
+                            ><span style="margin-top: 0px; color: #333333"
+                              ><span style="margin-top: 0px; color: #333333">문제유형 :&nbsp;<span style="color: #006dd7">프로그래밍(SQL)</span></span></span
+                            ></span
+                          ></b
+                        ></span
+                      >
+                    </p>
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b
+                            >답안 :&nbsp;<b
+                              ><span style="color: #333333"
+                                ><b
+                                  ><span style="color: #333333"><span style="color: #ee2323">1 [테이블 그린 상태로] OR 1</span></span></b
+                                ></span
+                              ></b
+                            ></b
+                          ><b><span style="color: #ee2323"></span></b
+                          ><b
+                            ><b
+                              ><span style="color: #333333"
+                                ><b
+                                  ><span style="color: #333333"><span style="color: #ee2323"></span></span></b></span></b></b
+                          ><b></b
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"
+                    ><b>7. JAVA 문제 <b>&nbsp;( 부분점수 없음 )</b></b></span
+                  >
+                </p>
+                <pre id="code_1620638195139" class="java" data-ke-language="java" data-ke-type="codeblock"><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ssoTest</span></span>{
+                
+                     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String []args)</span></span>{
+                        <span class="hljs-keyword">int</span> a[][] = {{<span class="hljs-number">45</span>, <span class="hljs-number">50</span>, <span class="hljs-number">75</span>}, {<span class="hljs-number">89</span>}};
+                        System.out.println(a[<span class="hljs-number">0</span>].length);
+                        System.out.println(a[<span class="hljs-number">1</span>].length);
+                        System.out.println(a[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]);
+                        System.out.println(a[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>]);
+                        System.out.println(a[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>]);
+                     }
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess" class="open">
+                  <a class="btn-toggle-moreless">닫기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"
+                        ><b
+                          ><b>문제 유형 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #006dd7">프로그래밍 (JAVA)</span></b></b
+                        ></span
+                      >
+                    </p>
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b></b
+                        ><b
+                          ><b><span style="color: #006dd7"></span></b></b
+                        ><b>답안</b><b></b
+                      ></span>
+                    </p>
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'; color: #ee2323"><b>3</b></span>
+                    </p>
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'; color: #ee2323"><b>1</b></span>
+                    </p>
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'; color: #ee2323"><b>45</b></span>
+                    </p>
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'; color: #ee2323"><b>50</b></span>
+                    </p>
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'; color: #ee2323"><b>89</b></span
+                      ><span style="color: #ee2323; font-family: 'Nanum Gothic'"><b></b></span>
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>8. 이것은 시스템의 성능 향상, 개발 과정의 편의성 등을 위해 정규화된 데이터 모델을 분할, 통합, 추가하는 과정으로, 의도적으로 정규화를 위배하는 행위이다. 이것은 무엇인가?</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess" class="open">
+                  <a class="btn-toggle-moreless">닫기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><b>문제 유형 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #006dd7">단답형 / 2020 1회 실기 기출</span></b></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b
+                            ><b><span style="color: #006dd7"></span></b></b
+                          ><b>답안 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #ee2323">반정규화 ( 역정규화, 비정규화 )</span></b
+                          ><b><span style="color: #ee2323"></span></b
+                        ></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">&nbsp;</p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>* 데이터 모델링 절차</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>- 개념적 데이터 모델링 &gt; 논리적 데이터 모델링 &gt; 물리적 데이터 모델링</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">&nbsp;</p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>1. 개념적 데이터 모델링</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>- 현실 세계의 인식을 추상적인 개념으로 모델링</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">&nbsp;</p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>2. 논리적 데이터 모델링</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>- 개념적 구조를 컴퓨터가 이해할 수 있는 형태로 변환</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">&nbsp;</p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>3. 물리적 데이터 모델링</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>- 논리 데이터 모델을 DBMS 특성 및 성능을 고려하여 구체화시킨 모델</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>( 반정규화는 물리데이터 모델링에 속함 )</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">&nbsp;</p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #ee2323"><b>* 정규화</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>- 관계형 데이터베이스 설계 시 중복을 최소화하여 데이터를 구조화하는 과정</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">&nbsp;</p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>* 참고</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>Q) 다음 중 반정규화 테이블 병합을 위한 테이블 종류가 아닌 것은? ( 3 )</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>1. 1:1 관계</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>2. 1:M 관계</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>3. N:M 관계</b></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"><b>4. 슈퍼/서브타입 관계</b></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>9. 다음은 블랙박스 테스트의 예시이다. (1), (2)에 알맞은 테스트를 작성하시오.</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>(1) 0 &lt;= x &lt;= 10일 때 -1 0 10 11인 경우 사용하는 테스트</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>(2) 유효값과 그렇지 않은 범위(무효값)를 나눠야할 경우 사용하는 테스트</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><b>문제 유형 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #006dd7">단답형 / 2020 4,5회차 키워드 기출문제</span></b></b
+                          ></span
+                        >
+                      </p>
+                    </div>
+                    <p style="line-height: 1.6" data-ke-size="size16">
+                      <span style="font-family: Nanum Gothic"><b>답안</b></span>
+                    </p>
+                    <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b><span style="color: #ee2323">(1) 경계값 분석 테스트 ( 한계값 분석 테스트 )</span></b
+                        ><b><span style="color: #ee2323"></span></b
+                      ></span>
+                    </p>
+                    <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b><span style="color: #ee2323">(2) 동등분할 테스트 ( 동치분할 테스트, 균등분할 테스트, 동치 클래스 분해 테스트 )</span></b
+                        ><b><span style="color: #ee2323"></span></b><b><span style="color: #ee2323"></span></b
+                      ></span>
+                    </p>
+                    <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">&nbsp;</p>
+                    <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"
+                        ><b><span style="margin-top: 0px">해설</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"
+                        ><b><span style="margin-top: 0px">* 블랙박스 테스트</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"
+                        ><b><span style="margin-top: 0px">- 프로그램 외부의 사용자 요구사항 명세를 보면서 수행하는 기능 테스트</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"
+                        ><b><span style="margin-top: 0px">- 경계값 분석, 동등분할 테스트, 결정 테이블, 상태전이, 유스케이스</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"
+                        ><b><span style="margin-top: 0px">* 화이트박스 테스트</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"
+                        ><b><span style="margin-top: 0px">- 내부 로직을 보면서 수행하는 구조 기반 테스트</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"
+                        ><b><span style="margin-top: 0px">- 제어 구조, 루프 테스트</span></b></span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>10. 다음 [ 보기 ] ㄱ~ㅂ 에서 (1), (2)에 알맞은 기호를 작성하시오.&nbsp;&nbsp;</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>(1) 이것은 모듈 테스트라고도 불리며 사용자 요구사항에 대한 단위 모듈, 서브루틴 등을 테스트한다.</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>(2) 이것은 인터페이스 간 시스템이 정상적으로 실행되는지 확인하는 테스트이다.</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>[ 보기 ] ㄱ. 시스템 테스트 ㄴ. 인수 테스트 ㄷ.알파 테스트 ㄹ. 단위 테스트 ㅁ. 통합 테스트 ㅂ. 회귀 테스트</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b>문제 유형 :&nbsp;<span style="margin-top: 0px; color: #006dd7">단답형&nbsp;</span></b></span
+                      >
+                    </p>
+                    <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b>답안 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #ee2323">(1) ㄹ (2) ㅁ</span></b
+                        ><b><span style="color: #ee2323"></span></b
+                      ></span>
+                    </p>
+                    <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><span style="margin-top: 0px; color: #333333"
+                          ><b>참고 : <a href="https://ss-o.tistory.com/106" target="_blank" rel="noopener">ss-o.tistory.com/106</a> -2020년 3회 예상 모의고사 40제 4번 문제</b></span
+                        ><span style="margin-top: 0px; color: #333333"><b></b></span
+                      ></span>
+                    </p>
+                    <span style="font-family: 'Nanum Gothic'"
+                      ><b
+                        ><span style="margin-top: 0px"><span style="margin-top: 0px"></span></span></b
+                      ><b
+                        ><span style="margin-top: 0px"><span style="margin-top: 0px"></span></span></b
+                      ><b
+                        ><span style="margin-top: 0px"><span style="margin-top: 0px"></span></span></b
+                    ></span>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>11. 다음 (1) ,(2)에 알맞은 답안을 작성하시오.</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>1. IPv6는 (1) 비트 길이를 가진다.</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>2. IPv4는 길이 32비트이며, (2) 비트씩 4분할한다</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b>문제 유형 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #006dd7">단답형&nbsp;</span></b></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b></b><b><span style="color: #006dd7"></span></b><b>답안 :</b><b> <span style="color: #ee2323">(1) 128 (2) 8</span></b
+                          ><b><span style="color: #ee2323"></span></b
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>12. 프로세스간 인터페이스, 공유 메모리(Shared Memory) 소켓(Socket) 세마포어(Semaphores)</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><b>문제 유형 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #006dd7">단답형</span></b></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b>답안 :</b
+                          ><b
+                            ><span style="color: #ee2323"
+                              ><span style="margin-top: 0px"> IPC 메<span style="color: #ee2323">소드 ( Inter-Process Communication )</span></span></span
+                            ></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">&nbsp;</p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="margin-top: 0px; font-family: 'Nanum Gothic'; color: #333333"
+                          ><b
+                            ><span style="margin-top: 0px"><span style="margin-top: 0px">해설</span></span></b
+                          ></span
+                        >
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"><b>IPC 메소드 ( InterProcess Communication )</b></span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"><b>* Shared Memory</b></span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">- 다수의 프로세스가&nbsp;<b>공유 가능한 메모리를 구성</b>하여 프로세스 간 통신을 수행함</span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"><b>* Socket</b></span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">- 네트워크 소켓을 이용하여&nbsp;<b>네트워크를 경유</b>하는 프로세스들 간 통신을 수행함</span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"><b>* Semaphores</b></span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">- 공유 자원에 대한<b>&nbsp;접근 제어를 통해 프로세스 간 통신</b>을 수행함</span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"><b>* Pipes&amp;named Pipes</b></span>
+                      </p>
+                      <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- Pipe라고 불리는 선입선출 형태로 구성된 메모리를 여러 프로세스가 공유하여 통신을 수행함</span></p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"><b>* Message Queueing</b></span>
+                      </p>
+                      <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- 메시지가 발생하면 이를 전달하는 형태로 프로세스 간 통신을 수행함</span></p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>13. 서로 다른 플랫폼 간의 연계, 통합, Point to Point, Hub&amp;Spoke, Message Bus 등이 있는 것은 무엇인가?</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b>문제 유형 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #006dd7">단답형</span></b></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b></b><b><span style="color: #006dd7"></span></b><b>답안 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #ee2323">EAI</span></b
+                          ><b><span style="color: #ee2323"></span></b
+                        ></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'; color: #333333"
+                          ><b>* 참고 : <a href="https://ss-o.tistory.com/106" target="_blank" rel="noopener">ss-o.tistory.com/106</a> <b>-2020년 3회 예상 모의고사 40제 9번 문제</b></b></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"
+                    ><b
+                      >14. [변형문제]
+                      <span style="color: #333333"
+                        ><b
+                          >다음 테이블의 카디널리티와
+                          <b
+                            ><span style="color: #333333"><b>차수의</b></span></b
+                          >&nbsp;갯수를 구하시오. (단, 학번, 학년은 숫자형, 이름과 학과는 문자형이다)</b
+                        ></span
+                      ></b
+                    ></span
+                  >
+                </p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>student테이블</b></span>
+                </p>
+                <table style="border-collapse: collapse; width: 100%; height: 120px" border="1" data-ke-style="style8" data-ke-align="alignLeft">
+                  <tbody>
+                    <tr style="height: 20px">
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">학번</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">이름</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">학과</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">학년</span></td>
+                    </tr>
+                    <tr style="height: 20px">
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">20191001</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">강은미</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">컴퓨터학과</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">2</span></td>
+                    </tr>
+                    <tr style="height: 20px">
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">20192002</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">김정미</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">정보통신학과</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">2</span></td>
+                    </tr>
+                    <tr style="height: 20px">
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">20183003</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">홍길동</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">정보보호학과</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">3</span></td>
+                    </tr>
+                    <tr style="height: 20px">
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">20201002</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">김철수</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px">
+                        <span style="color: #333333; font-family: 'Nanum Gothic'"><span style="color: #333333">정보보호학과</span></span>
+                      </td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">2</span></td>
+                    </tr>
+                    <tr style="height: 20px">
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">20211003</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">김영희</span></td>
+                      <td style="width: 25%; text-align: center; height: 20px">
+                        <span style="color: #333333; font-family: 'Nanum Gothic'"><span style="color: #333333">정보통신학과</span></span>
+                      </td>
+                      <td style="width: 25%; text-align: center; height: 20px"><span style="color: #333333; font-family: 'Nanum Gothic'">3</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"
+                    ><b>- <b>카디널리티&nbsp;</b>: (&nbsp; ①&nbsp; )&nbsp;</b></span
+                  >
+                </p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"
+                    ><b>- <b>차수</b> : (&nbsp; ②&nbsp; )</b></span
+                  >
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b>문제 유형 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #006dd7">프로그래밍 ( SQL )</span></b></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b></b><b><span style="color: #006dd7"></span></b><b>답안 :</b><b>&nbsp;<span style="color: #ee2323"></span></b
+                          ><span style="color: #333333"
+                            ><b><span style="color: #ee2323">① 5 ② 4</span></b></span
+                          ></span
+                        >
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'; color: #333333"
+                          ><b><b>해설</b></b></span
+                        >
+                      </p>
+                      <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'; color: #333333">- 카디널리티(cardinality) : 하나의 릴레이션에서 투플(행)의 전체 개수를 릴레이션의 카디널리티라고 한다.</span></p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'; color: #333333"><span style="color: #333333">-&nbsp;차수(degree) : 하나의 릴레이션에 속성(열)의 전체 개수를 릴레이션의 차수라고 한다.</span></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>15. C언어</b></span>
+                </p>
+                <pre id="code_1620639894165" class="c++ arduino" data-ke-language="c++" data-ke-type="codeblock"><code class="hljs cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+                
+                    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">insa</span> {</span>
+                
+                        <span class="hljs-keyword">char</span> name[<span class="hljs-number">10</span>];
+                
+                        <span class="hljs-keyword">int</span> age;
+                
+                    } a[] = {<span class="hljs-string">"Kim"</span>, <span class="hljs-number">28</span>, <span class="hljs-string">"Lee"</span>, <span class="hljs-number">38</span>, <span class="hljs-string">"Park"</span>, <span class="hljs-number">41</span>, <span class="hljs-string">"Choi"</span>, <span class="hljs-number">30</span>};
+                
+                    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">insa</span> *<span class="hljs-title">p</span>;</span>
+                
+                    p = a;
+                
+                    p++;
+                
+                    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%s "</span>, p-&gt;name);
+                
+                    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>, p-&gt;age);
+                
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b>문제 유형 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #006dd7">프로그래밍 ( C언어 )</span></b></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b></b><b><span style="color: #006dd7"></span></b><b>답안 :&nbsp;</b><b>&nbsp;</b></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b><span style="color: #ee2323">Lee</span></b></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b><span style="color: #ee2323">38</span></b></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"
+                    ><b><span style="color: #333333">16. 다음은 데이터 모델 구성 요소 3가지에 대한 설명이다. 다음에 알맞는 답안을 작성하시오. ( 문제 완전하지 않음 )</span></b></span
+                  >
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>(1) 데이터베이스에 저장된 실제 데이터를 처리하는 작업에 대한 명세로서 데이터 베이스를 조작하는 기본 도구이다.</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>(2) 개체 모델에서는 (①)을/를 ~ 나타내는데 논리 데이터 모델에서는 (②)을/를 어떻게 나타낼 것인지 ~</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"><b>(3) 제약조건 명시되어 있음</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><span style="color: #333333"
+                              ><span style="color: #333333">문제 유형 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #006dd7">단답형</span></span></span
+                            ></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b
+                            ><span style="color: #333333"
+                              ><span style="margin-top: 0px; color: #333333">답안 <span style="color: #ee2323">① 연산 ② 구조</span></span></span
+                            ></b
+                          ><b
+                            ><span style="color: #333333"
+                              ><span style="color: #333333"><span style="color: #ee2323"></span></span></span></b
+                          ><b
+                            ><span style="color: #333333"
+                              ><span style="color: #333333"><span style="color: #ee2323"></span></span></span></b
+                          ><b
+                            ><span style="color: #333333"><span style="color: #333333"></span></span></b
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>17. 시스템 객체의 접근을 개인 또는 그룹의 식별자에 기반한 방법으로 이떤 종류의 접근 권한을 가진 사용자가 다른 사용자에게 자신의 판단에 따라 권한을 허용하는 접근제어 방식은? ( 부분점수 없음 )</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><span style="color: #333333"
+                              ><b
+                                ><span style="color: #333333">문제 유형 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #006dd7">단답형</span></span></b
+                              ></span
+                            ></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><span style="color: #333333">답안 :&nbsp;<span style="color: #ee2323">DAC ( 임의적 접근 통제 )</span></span></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">&nbsp;</p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"><b>데이터베이스 보안의 접근 통제</b></span>
+                      </p>
+                      <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- 데이터가 저장된 객체와 이를 사용하려는 주체 사이의 정보 흐름을 제안하는 것</span></p>
+                      <p data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- 데이터에 대해 다음과 같은 통제를 함으로써 자원의 불법적인 접근 및 파괴를 예방</span></p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">-&nbsp;<b>무결성 모델</b>&nbsp;: 기밀성 모델에서 발생하는 불법적인 정보 변경을 방지하기 위해 무결성을 기반으로 개발된 모델로&nbsp;<b>무결성 보장이 최우선인 모델</b></span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"><b>* 접근 통제 기술</b></span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">-&nbsp;<b>임의 접근 통제(DAC; Discretionary Access Control)</b></span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">: 데이터에 접근하는&nbsp;<b>사용자의 신원에 따라</b>&nbsp;접근 권한을 부여하는 방식</span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">-&nbsp;<b>강제 접근 통제(MAC; Mandatory Access Control)</b></span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">:&nbsp;<b>주체와 객체의 등급을 비교하여 접근 권한을 부여</b>하는 방식</span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"><b>* 접근 통제의 3요소 : 접근통제 정책, 접근통제 메커니즘, 접근통제 보안모델</b></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>18. JAVA 문제 ( 부분점수 없음 )</b></span>
+                </p>
+                <pre
+                  id="code_1620636491079"
+                  class="java"
+                  style="margin: 20px auto 0px; display: block; overflow: auto; padding: 15px; color: #383a42; background: #f6f7f8; font-size: 14px; border-radius: 3px; font-family: Menlo, Consolas, Monaco, monospace; border: 1px solid #dddddd; cursor: default; z-index: 1"
+                  data-ke-language="java"
+                  data-ke-type="codeblock"
+                ><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ssoTest</span> </span>{
+                    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                        <span class="hljs-keyword">int</span> j, i;
+                        <span class="hljs-keyword">for</span> (j = <span class="hljs-number">0</span>, i = <span class="hljs-number">0</span>; i &lt;= <span class="hljs-number">5</span>; i++) {
+                            j += i;
+                            System.out.print(i);
+                            <span class="hljs-keyword">if</span> (i == <span class="hljs-number">5</span>) {
+                                System.out.print(<span class="hljs-string">"="</span>);
+                                System.out.print(j);
+                            } <span class="hljs-keyword">else</span> {
+                                System.out.print(<span class="hljs-string">"+"</span>);
+                            }
+                        }
+                    }
+                }</code></pre>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><span style="color: #333333"
+                              ><span style="color: #333333">문제 유형 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #006dd7">프로그래밍 ( JAVA )</span></span></span
+                            ></b
+                          ></span
+                        >
+                      </p>
+                    </div>
+                    <p data-ke-size="size16">
+                      <span style="font-family: 'Nanum Gothic'"
+                        ><b>답안 : </b
+                        ><b
+                          ><span style="color: #333333"
+                            ><span style="color: #333333"><span style="color: #ee2323">0+1+2+3+4+5=15</span></span></span
+                          ></b
+                        ></span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"
+                    ><b>19. <b>다음 [ 보기 ] ㄱ~ㅂ 에서 (1), (3)에 알맞은 기호를 작성하시오.&nbsp;&nbsp;</b></b></span
+                  >
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>(1) 모듈간 데이터, 지역변수를 직접 참조하는 경우의 결합도</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>(2) 모듈간의 인터페이스로 배열이나 객체 등 자료구조가 전달되는 경우의 결합도</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>(3) 파라미터가 아닌 모듈 밖에 선언되어 있는 전역 변수를 참조하고 전역변소를 갱신하는 식으로 상호 작용을 하는 경우의 결합도</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: Nanum Gothic"><b>[ 보기 ] ㄱ. 자료 결합도 ㄴ. 스탬프 결합도 ㄷ. 제어 결합도 ㄹ. 공통 결합도 ㅁ. 내용 결합도 ㅂ. 외부 결합도</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b>문제 유형 :<span style="margin-top: 0px"> </span><span style="color: #006dd7">단답형</span></b></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b></b><b><span style="color: #006dd7"></span></b><b>답안 :<span style="color: #ee2323"> (1) ㅁ (2) ㄴ (3) ㄹ</span></b
+                          ><b
+                            ><span style="color: #ee2323"><b></b></span></b
+                        ></span>
+                      </p>
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">&nbsp;</p>
+                      <p data-ke-size="size16">
+                        <span style="color: #ee2323; font-family: 'Nanum Gothic'"><b>* 결합도와 응집도</b></span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><span style="color: #333333"
+                            >- 결합도 : 상호의존의 정도,&nbsp;<span style="color: #ee2323"><b>결합도가 약해야 품질이 상승</b></span></span
+                          ></span
+                        >
+                      </p>
+                      <p id="SE-aa887fd7-4857-4a91-9c27-382ec35824b5" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"><b>[ 결합도가 약한 순서 -&gt; 강한 순서 ]</b></span>
+                      </p>
+                      <p id="SE-3abad6ca-2f39-452b-85af-2d064498bb58" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><span style="color: #ee2323"><b>data – stamp – control – external – common - content</b></span
+                          ><span style="color: #ee2323"
+                            ><b><span style="color: #333333"></span></b></span
+                        ></span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><span style="color: #ee2323"
+                            ><b
+                              ><span style="color: #333333"><span style="color: #333333">자료-데이터 / 스탬프-자료구조 / 제어-다른 모듈에서 흐름 파악 / 외부-참조&nbsp;</span></span></b
+                            ></span
+                          ><span style="color: #ee2323"
+                            ><b
+                              ><span style="color: #333333"><span style="color: #333333">/</span></span></b
+                            ></span
+                          ><span style="color: #ee2323"
+                            ><b
+                              ><span style="color: #333333"><span style="color: #333333">&nbsp;공통-공유되는 / 내용-직접참조,다른모듈에서 사용</span></span></b
+                            ></span
+                          ></span
+                        >
+                      </p>
+                      <p id="SE-eb9d8c48-8769-469b-968a-8bf02b7be4ad" data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- 자료: 어떤 모듈이 다른 모듈을 호출하면서 매개 변수나 인수로 데이터를 넘겨주고, 호출 받은 모듈은 받은&nbsp;<b>데이터</b>에 대한 처리 결과를 다시 돌려주는 방식</span></p>
+                      <p id="SE-bc31182c-b36c-49c8-bea9-31210b9613a6" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">- 스탬프: 두 모듈이 동일한&nbsp;<b>자료 구조</b>를 조회하는 경우</span>
+                      </p>
+                      <p id="SE-a8cc1e4b-7d5d-40a4-b34f-14588b409fd1" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">- 제어: 한 모듈이 다른 모듈의 상세한 처리 절차를 알고 있어 이를 통제하는 경우나 처리 기능이 두 모듈에 분리되어 설계된 경우,&nbsp;<b>다른 모듈에서 흐름을 제어</b></span>
+                      </p>
+                      <p id="SE-1e5cd432-c3bb-41d7-a251-a0521864997c" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">- 외부: 어떤 모듈에서 선언한 데이터를&nbsp;<b>외부의 다른 모듈에서 참조</b>할 때</span>
+                      </p>
+                      <p id="SE-98158344-fb2e-43b5-a0a6-2a4cfe535f56" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">- 공통:&nbsp;<b>공유되는 공통 데이터 영역</b>을 여러 모듈이 사용할 때</span>
+                      </p>
+                      <p id="SE-07a7d11e-1fde-4c58-b063-a76b0d8fc088" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">- 내용: 한 모듈이 다른 모듈의 내부 기능 및 그 내부 자료를&nbsp;<b>직접 참조하거나 수정</b>할 때</span>
+                      </p>
+                      <p id="SE-fa00c622-ad28-4b58-83c3-14cf827067ca" data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">( 다른 모듈에서 사용하는 경우 )</span></p>
+                      <p id="SE-1fd2f898-008a-47e3-80ad-489327322754" data-ke-size="size16">&nbsp;</p>
+                      <p id="SE-e32aa3de-6114-45a3-a387-c125aa6be313" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          >- 응집도 : 정보은닉 개념 확장,&nbsp;<b><span style="color: #ee2323">응집도가 강할수록 품질이 좋음</span></b></span
+                        >
+                      </p>
+                      <p id="SE-177eca69-52e5-4212-9e30-34b0ce28d227" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"><b>[ 응집도가 강한 순서 -&gt; 약한 순서]</b></span>
+                      </p>
+                      <p id="SE-65a08c5c-5fd4-41f2-9b22-89212ad03609" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><span style="color: #ee2323"><b>functional – sequential – communication – procedural – temporal – logical – coincidental</b></span
+                          ><span style="color: #ee2323"><b></b></span
+                        ></span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"><b>기능-단일 / 순차-나온것 입력으로 / 통신-동일한입출력 다른기능수행</b></span>
+                      </p>
+                      <p data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"><b>절차-다수의 관련기능 순차수행 / 시간-특정시간 / 논리-유사한 성격 / 우연-서로 관련 없는 요소</b></span>
+                      </p>
+                      <p id="SE-aa289403-ac80-4682-9e1c-8fe587e362a4" data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- 기능적 : 모듈 내부의 모든 기능 요소들이&nbsp;<b>단일</b>&nbsp;문제와 연관되어 수행될 경우</span></p>
+                      <p id="SE-5751bfee-cd9b-4678-9da5-9053bd901dc7" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">- 순차적 : 모듈 내 하나의 활동으로부터&nbsp;<b>나온 출력 데이터를 그 다음활동의 입력 데이터로 사용</b>할 경우</span>
+                      </p>
+                      <p id="SE-2f2451c1-2e72-4148-83f8-b45664a536ec" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">- 통신적(교환적) :&nbsp;<b>동일한 입출력을 사용하여 서로 다른 기능을 수행</b>하는 구성 요소들이 모였을 경우</span>
+                      </p>
+                      <p id="SE-3cf9c30f-740e-4e18-b431-2e1e953cc6c1" data-ke-size="size16"><span style="font-family: 'Nanum Gothic'">- 절차적 : 모듈이<b>&nbsp;다수</b>의 관련 기능을 가질 때 모듈 안의 구성요소들이 그 기능을&nbsp;<b>순차적</b>으로 수행할 경우</span></p>
+                      <p id="SE-2d3e8c08-a908-4134-b9ee-870855e0e2bc" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">- 시간적 :&nbsp;<b>특정 시간에 처리</b>되는 몇 개의 기능을 모아 하나의 모듈로 작성한 경우</span>
+                      </p>
+                      <p id="SE-ef21cd21-7d35-492b-9e44-b98c9589bbb2" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">- 논리적 :<b>&nbsp;유사한 성격</b>을 갖거나 특정 형태로 분류되는 처리요소들이 하나의 모듈이 되는 경우</span>
+                      </p>
+                      <p id="SE-d54c9a91-b0c3-4dfe-ab20-6c07abb43185" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'">- 우연적 : 모듈 내부의 각 구성요소들이&nbsp;<b>서로 관련 없는 요소</b>로만 구성된 경우</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>20. 괄호안에 공통적으로 들어갈 공격 기법을 적으시오 ( 부분점수 없음 )</b></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="font-family: 'Nanum Gothic'"
+                    ><span style="color: #333333"><b>1. ( ) 은/는 '세션을 가로채다'라는 의미로, 정상적 연결을 RST 패킷을 통해 종료시킨 후 재연결 시 희생자가 아닌 공격자에게 연결한다.</b></span
+                    ><span style="color: #333333"><b></b></span
+                  ></span>
+                </p>
+                <p data-ke-size="size16">
+                  <span style="color: #333333; font-family: 'Nanum Gothic'"><b>2. TCP ()은 ~ [TCP 하이재킹의 원리에 대한 설명]</b></span>
+                </p>
+                <div style="margin: 20px 0px; caret-color: auto; background-color: #fafafa; padding: 20px 20px 22px; border: 1px dashed #c5c5c5; color: #333333" data-text-more="더보기" data-text-less="닫기" data-ke-type="moreLess">
+                  <a class="btn-toggle-moreless">더보기</a>
+                  <div class="moreless-content">
+                    <div style="margin-top: 0px">
+                      <p style="line-height: 1.6; margin-top: 0px" data-ke-size="size16">
+                        <span style="font-family: Nanum Gothic"
+                          ><b
+                            ><span style="color: #333333"
+                              ><span style="color: #333333">문제 유형 :<span style="margin-top: 0px">&nbsp;</span><span style="color: #006dd7">단답형</span></span></span
+                            ></b
+                          ></span
+                        >
+                      </p>
+                      <p style="line-height: 1.6; margin: 1px auto 0px" data-ke-size="size16">
+                        <span style="font-family: 'Nanum Gothic'"
+                          ><b
+                            ><span style="margin-top: 0px; color: #333333">답안 : <span style="color: #ee2323">세션 하이재킹 OR TCP 세션 하이재킹</span></span></b
+                          ><b
+                            ><span style="color: #333333"><span style="color: #ee2323"></span></span></b
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p data-ke-size="size16">&nbsp;</p>
+              </div>
+            </div>
+
+            <!-- </div> -->
+            <textarea class="answer" onkeydown="resize(this)" onkeyup="resize(this)" cols="90" rows="1"></textarea>
+          </article>
+          <aside id="aside" class="sidebar" style="height: auto !important"></aside>
+        </div>
+      </section>
+    </div>
+    <script>
+      function resize(obj) {
+        obj.style.height = "1px";
+        obj.style.height = 5 + obj.scrollHeight + "px";
+      }
+    </script>
+  </body>
+</html>
